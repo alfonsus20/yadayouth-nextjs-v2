@@ -1,16 +1,29 @@
-name: deploy nexturl to vercel
-on: [push, pull_request]
+name: Deploy to Production
+on:
+  push:
+    branches: [main]
 jobs:
   vercel:
     runs-on: ubuntu-latest
     steps:
+      - name : Checkout code
       - uses: actions/checkout@v2
 
-      # deploy app to vercel
-      - name: deploy site to vercel
+      - name: Deploy to Staging
+        id: deploy-vercel-staging
         uses: amondnet/vercel-action@v20
+        if : github.event_name == 'push' && github.ref == 'refs/heads/staging'
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-          vercel-args: "--prod" #Optional
-          vercel-org-id: ${{ secrets.ORG_ID}} #Required
-          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}
+
+      - name: Deploy to Production
+        id: deploy-vercel-production
+        uses: amondnet/vercel-action@v20
+        if : github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: "--prod"
+          vercel-org-id: ${{ secrets.ORG_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}
