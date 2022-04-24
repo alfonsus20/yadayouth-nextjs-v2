@@ -17,8 +17,7 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
-        alias-domains:
-          https://staging-yadayouth-nextjs.vercel.app
+          alias-domains: https://staging-yadayouth-nextjs.vercel.app
 
       - name: Deploy to Production
         id: deploy-vercel-production
