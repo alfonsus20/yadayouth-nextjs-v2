@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.is-rounded {
+  @apply rounded-md;
+}
+
+.is-pill {
+  @apply rounded-full;
+}
