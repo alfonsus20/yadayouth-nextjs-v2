@@ -18,11 +18,12 @@ const Article = ({ imageURL, title, preview }: ArticleProps) => {
           objectFit="cover"
           objectPosition="center"
           className="rounded-lg"
+          data-testId="card-image"
         />
       </div>
       <div className="text-sm">
-        <p className="text-xl font-bold mb-2 text-black-light">{title}</p>
-        <p className="line-clamp-3">{preview}</p>
+        <p className="text-xl font-bold mb-2 text-black-light" data-testid="card-title">{title}</p>
+        <p className="line-clamp-3" data-testid="card-description">{preview}</p>
       </div>
     </div>
   );
