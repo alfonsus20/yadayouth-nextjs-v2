@@ -1,7 +1,7 @@
 @tailwind components;
 
 .input {
-  @apply flex gap-x-1 px-6 py-2 items-center;
+  @apply flex gap-x-1 px-3 sm:px-6 py-2 items-center;
 
   &-secondary {
     @apply bg-gray-light placeholder:text-gray;

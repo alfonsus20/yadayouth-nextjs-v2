@@ -27,7 +27,7 @@ const Input = ({
         "is-rounded": shape === "rounded",
       })}
     >
-      <input {...rest} />
+      <input className="flex-auto" {...rest} />
       {icon}
     </div>
   );

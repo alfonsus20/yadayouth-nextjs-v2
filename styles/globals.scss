@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @media screen and (max-width: 1280px) {
+    font-size: 90%;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 85%;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 80%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .is-rounded {
   @apply rounded-md;
 }

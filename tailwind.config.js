@@ -12,6 +12,9 @@ module.exports = {
           DEFAULT: "#888893",
           light: "#F5F3F3",
         },
+        black: {
+          light: "#524A4E",
+        },
       },
     },
     screens: {
