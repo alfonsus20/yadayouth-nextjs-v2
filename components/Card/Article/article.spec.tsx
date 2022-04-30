@@ -16,9 +16,16 @@ describe("Article Card unit test", () => {
     expect(screen.getByTestId("card-description")).toBeInTheDocument();
   });
 
+  it("should match snapshot", () => {
+    const container = render(<ArticleCard {...mockedProps} />);
+    expect(container).toMatchSnapshot();
+  });
+
   it("should render title and description correctly", () => {
     render(<ArticleCard {...mockedProps} />);
     expect(screen.getByTestId("card-title").textContent).toEqual("Title test");
-    expect(screen.getByTestId("card-description").textContent).toEqual("Preview test");
+    expect(screen.getByTestId("card-description").textContent).toEqual(
+      "Preview test"
+    );
   });
 });
