@@ -1,13 +1,17 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Component {...pageProps} />
-    </main>
+      <main className="flex-auto">
+        <Component {...pageProps} />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
