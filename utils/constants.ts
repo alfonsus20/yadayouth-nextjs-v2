@@ -1,1 +1,0 @@
-export const BASE_URL = "https://api.yadayouth.id/api";

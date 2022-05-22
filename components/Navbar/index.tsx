@@ -5,7 +5,7 @@ import HamburgerMenu from "react-hamburger-menu";
 
 const Navbar = () => {
   return (
-    <div className="px-8 py-2 flex justify-between items-center sticky top-0 bg-white z-10">
+    <div className="px-8 py-2 flex justify-between items-center sticky top-0 bg-white z-20">
       <Link href='/'>
         <a className="w-16 h-16">
           <Image width={200} height={200} src="/logo.png" alt="logo" />

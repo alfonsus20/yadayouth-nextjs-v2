@@ -15,6 +15,18 @@ module.exports = {
         black: {
           light: "#524A4E",
         },
+        blue: {
+          DEFAULT: "#222AEF",
+        },
+        orange: {
+          DEFAULT: "#FF4C2E",
+        },
+        yellow: {
+          DEFAULT: "#FBBB1B",
+        },
+        green: {
+          DEFAULT: "#23B70B",
+        },
       },
     },
     screens: {
