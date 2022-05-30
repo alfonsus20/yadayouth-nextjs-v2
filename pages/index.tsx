@@ -78,7 +78,7 @@ const Home: NextPage<Props> = ({ data }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await fetchIGPosts();
-  return { props: { data: data.data } };
+  return { props: { data: null } };
 };
 
 export default Home;

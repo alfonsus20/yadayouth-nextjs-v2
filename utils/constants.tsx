@@ -7,7 +7,7 @@ import Service1Img from "../public/service/1.png";
 import Service2Img from "../public/service/2.png";
 import Service3Img from "../public/service/3.png";
 
-export const BASE_URL = "https://api.yadayouth.id/api";
+export const BASE_URL = "https://api.yada-youth.id/api";
 
 export const IMPACTS = [
   {
