@@ -31,13 +31,13 @@ const ArticleDetail = () => {
 };
 
 export const getStaticProps: GetStaticProps = (ctx) => {
-  const { mahasiswaId } = ctx.params!;
+  const { articleId } = ctx.params!;
 
   return { props: {} };
 };
 
 export const getStaticPaths: GetStaticPaths = () => {
-  return { paths: [{ params: { mahasiswaId: "1" } }], fallback: "blocking" };
+  return { paths: [{ params: { articleId: "1" } }], fallback: "blocking" };
 };
 
 export default ArticleDetail;
