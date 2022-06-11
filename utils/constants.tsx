@@ -7,7 +7,7 @@ import Service1Img from "../public/service/1.png";
 import Service2Img from "../public/service/2.png";
 import Service3Img from "../public/service/3.png";
 
-import MissionImg from "../public/about/Mission.jpg";
+import MissionImg from "../public/about/mission.jpg";
 import VisionImg from "../public/about/vision.jpg";
 
 export const BASE_URL = "https://api.yada-youth.id/api";
