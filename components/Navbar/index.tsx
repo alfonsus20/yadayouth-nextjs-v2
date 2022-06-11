@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "react-hamburger-menu";
@@ -16,7 +15,7 @@ const Navbar = () => {
           <Link href="/">
             <a className="px-4">Beranda</a>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <a className="px-4">Tentang Kami</a>
           </Link>
           <Link href="/articles">

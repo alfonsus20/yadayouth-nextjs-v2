@@ -7,6 +7,9 @@ import Service1Img from "../public/service/1.png";
 import Service2Img from "../public/service/2.png";
 import Service3Img from "../public/service/3.png";
 
+import MissionImg from "../public/about/Mission.jpg";
+import VisionImg from "../public/about/vision.jpg";
+
 export const BASE_URL = "https://api.yada-youth.id/api";
 
 export const IMPACTS = [
@@ -63,5 +66,20 @@ export const SERVICES = [
     buttonHref: "/",
     image: Service3Img,
     color: "blue",
+  },
+];
+
+export const VISION_MISSION = [
+  {
+    image: VisionImg,
+    title: "VISI KAMI",
+    description:
+      "Membangun masyarakat yang cocok untuk masa depan umat manusia, di mana anak-anak, remaja, dan pemuda diberi makan dengan baik, berpendidikan baik, sehat, setara, dilindungi, dan dirawat.",
+  },
+  {
+    image: MissionImg,
+    title: "MISI KAMI",
+    description:
+      "Terus meningkatkan standar hidup anak-anak, remaja, dan remaja untuk membantu mereka hidup lebih bahagia, memberdayakan mereka untuk mencapai lebih banyak, dan berkontribusi lebih banyak kepada masyarakat",
   },
 ];
