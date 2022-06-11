@@ -45,7 +45,7 @@ export const SERVICES = [
     description:
       "Kami terbuka untuk donasi dengan semua keuntungan akan diberikan kepada anak-anak di Indonesia",
     buttonText: "Donasi",
-    buttonHref: "/donasi",
+    buttonHref: "/donate",
     image: Service1Img,
     color: "red",
   },
@@ -81,5 +81,28 @@ export const VISION_MISSION = [
     title: "MISI KAMI",
     description:
       "Terus meningkatkan standar hidup anak-anak, remaja, dan remaja untuk membantu mereka hidup lebih bahagia, memberdayakan mereka untuk mencapai lebih banyak, dan berkontribusi lebih banyak kepada masyarakat",
+  },
+];
+
+export const DONATION_AIMS = [
+  {
+    color: "orange",
+    description:
+      "Bantu Salurkan suplai makanan bernutrisi kepada anak-anak dengan gizi buruk untuk mendukung pemulihan mereka",
+  },
+  {
+    color: "blue",
+    description:
+      "Membantu keluarga yang hidup dalam kemiskinan dalam bentuk tunjangan untuk mendukung dan meningkatkan taraf hidup mereka",
+  },
+  {
+    color: "yellow",
+    description:
+      "Memberikan akses layanan pendidikan bagi keluarga terkait stunting anak untuk meminimalkan pertumbuhan stunting di Indonesia",
+  },
+  {
+    color: "green",
+    description:
+      "Mendukung pembangunan infrastruktur sanitasi dan pendidikan yang layak di pedesaan dan pedesaan",
   },
 ];

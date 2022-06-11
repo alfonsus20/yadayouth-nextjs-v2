@@ -21,10 +21,10 @@ const Navbar = () => {
           <Link href="/articles">
             <a className="px-4">Artikel</a>
           </Link>
-          <Link href="/">
+          <Link href="/donate">
             <a className="px-4">Donasi</a>
           </Link>
-          <Link href="/">
+          <Link href="#contact">
             <a className="px-4">Kontak Kami</a>
           </Link>
         </div>
