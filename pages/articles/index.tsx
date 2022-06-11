@@ -1,18 +1,18 @@
-import { GetStaticProps, NextPage } from "next";
-import Input from "../../components/Input";
 import { SearchIcon, SortDescendingIcon } from "@heroicons/react/outline";
+import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import IconButton from "../../components/IconButton";
-import { BASE_URL } from "../../utils/constants";
-import { ArticleList } from "../../types/entities/article";
 import Image from "next/image";
 import { ArticleCard } from "../../components/Card";
+import IconButton from "../../components/IconButton";
+import Input from "../../components/Input";
+import { ArticleList } from "../../types/entities/article";
+import { BASE_URL } from "../../utils/constants";
 
-type TProps = {
+type Props = {
   data: ArticleList;
 };
 
-const Articles: NextPage<TProps> = ({ data }) => {
+const Articles: NextPage<Props> = ({ data }) => {
   return (
     <div className="max-w-screen-xl mx-auto px-8">
       <Head>

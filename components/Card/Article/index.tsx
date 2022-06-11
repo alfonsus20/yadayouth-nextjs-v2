@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 type ArticleProps = {
@@ -18,7 +17,7 @@ const Article = ({ imageURL, title, preview }: ArticleProps) => {
           objectFit="cover"
           objectPosition="center"
           className="rounded-lg"
-          data-testId="card-image"
+          data-testid="card-image"
         />
       </div>
       <div className="text-sm">
