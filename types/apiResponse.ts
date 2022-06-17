@@ -20,3 +20,5 @@ export type ErrorResponse = {
 export type APIResponse<TData> = AxiosPromise<
   SuccessResponse<TData> | ErrorResponse
 >;
+
+export type APIResponsePaginated<TData> = AxiosPromise<Paginated<TData>>;

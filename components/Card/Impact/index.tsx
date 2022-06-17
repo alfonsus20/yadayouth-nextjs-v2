@@ -1,6 +1,5 @@
-import Image, { StaticImageData } from "next/image";
-import React from "react";
 import cn from "classnames";
+import Image, { StaticImageData } from "next/image";
 
 type Props = {
   image: StaticImageData;
@@ -22,8 +21,8 @@ const Impact = ({ image, color, title, description }: Props) => {
         }
       )}
     >
-      <div className="absolute -top-24 -right-4">
-        <Image src={image} alt={title} width={200} height={200} />
+      <div className="absolute -top-24 -right-4 ">
+        <Image src={image} alt={title} width={220} height={220} quality={100} />
       </div>
       <div className="text-white">
         <h3 className="font-semibold text-xl mb-1">{title}</h3>

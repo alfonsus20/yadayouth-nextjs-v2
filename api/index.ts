@@ -1,1 +1,5 @@
-export { default as igApi } from "./ig";
+import axios from "axios";
+
+export default axios.create({
+  baseURL: "https://api.yada-youth.id/api",
+});

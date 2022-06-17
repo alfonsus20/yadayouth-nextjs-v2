@@ -1,11 +1,11 @@
-import Impact1Img from "../public/impact/1.png";
-import Impact2Img from "../public/impact/2.png";
-import Impact3Img from "../public/impact/3.png";
-import Impact4Img from "../public/impact/4.png";
+import Impact1Img from "../public/impact/1.svg";
+import Impact2Img from "../public/impact/2.svg";
+import Impact3Img from "../public/impact/3.svg";
+import Impact4Img from "../public/impact/4.svg";
 
-import Service1Img from "../public/service/1.png";
-import Service2Img from "../public/service/2.png";
-import Service3Img from "../public/service/3.png";
+import Service1Img from "../public/service/1.svg";
+import Service2Img from "../public/service/2.svg";
+import Service3Img from "../public/service/3.svg";
 
 import MissionImg from "../public/about/mission.jpg";
 import VisionImg from "../public/about/vision.jpg";

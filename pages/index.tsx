@@ -1,4 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import { ImpactCard, ServiceCard } from "../components/Card";
 import Carousel from "../components/Carousel";
@@ -15,6 +16,9 @@ type Props = {
 const Home: NextPage<Props> = ({ data }) => {
   return (
     <div>
+      <Head>
+        <title>Yada Youth</title>
+      </Head>
       <section
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"
@@ -40,7 +44,7 @@ const Home: NextPage<Props> = ({ data }) => {
         />
       </section>
       <section className="max-w-[1200px] mx-auto p-16">
-        <h2 className="font-semibold text-4xl text-center mb-32">
+        <h2 className="font-bold text-4xl text-center mb-32">
           Dampak Kami
         </h2>
         <div className="grid grid-cols-12 gap-10">
@@ -56,9 +60,10 @@ const Home: NextPage<Props> = ({ data }) => {
           alt="service"
           objectFit="cover"
           placeholder="blur"
+          objectPosition="bottom"
         />
-        <div className="px-16 pt-24 pb-48 max-w-screen-2xl mx-auto relative z-10">
-          <h2 className="font-semibold text-4xl text-center mb-32 text-white">
+        <div className="px-16 pt-32 pb-56 max-w-screen-2xl mx-auto relative z-10">
+          <h2 className="font-bold text-4xl text-center mb-32 text-white">
             Layanan Kami
           </h2>
           <div className="flex flex-wrap gap-x-4 gap-y-20 justify-around">
@@ -69,7 +74,7 @@ const Home: NextPage<Props> = ({ data }) => {
         </div>
       </section>
       <section className="max-w-screen-2xl mx-auto p-16 rounded-t-[4.5rem] bg-white relative bottom-20">
-        <h2 className="font-semibold text-4xl text-center mb-8">Recent Post</h2>
+        <h2 className="font-bold text-4xl text-center mb-8">Recent Post</h2>
         {data && <Carousel data={data} />}
       </section>
     </div>
@@ -78,7 +83,7 @@ const Home: NextPage<Props> = ({ data }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await fetchIGPosts();
-  return { props: { data: null } };
+  return { props: { data: data.results } };
 };
 
 export default Home;

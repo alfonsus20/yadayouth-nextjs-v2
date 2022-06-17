@@ -1,8 +1,8 @@
+import cn from "classnames";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider, { Settings } from "react-slick";
 import { IGPost } from "../../types/entities/igPost";
-import cn from "classnames";
 
 type Props = {
   data: IGPost[];
@@ -53,8 +53,8 @@ const Carousel = ({ data }: Props) => {
 
   return (
     <Slider {...settings}>
-      {data.map((post) => (
-        <div key={post.id}>
+      {data.map((post,idx) => (
+        <div key={idx}>
           <div className="p-4 flex justify-center">
             <Image src={post.media_url} alt="post" width={450} height={450} />
           </div>
