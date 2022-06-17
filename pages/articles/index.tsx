@@ -5,11 +5,11 @@ import Image from "next/image";
 import { ArticleCard } from "../../components/Card";
 import IconButton from "../../components/IconButton";
 import Input from "../../components/Input";
-import { ArticleList } from "../../types/entities/article";
-import { BASE_URL } from "../../utils/constants";
+import { fetchArticles } from "../../models/article";
+import { Article } from "../../types/entities/article";
 
 type Props = {
-  data: ArticleList;
+  data?: Array<Article>;
 };
 
 const Articles: NextPage<Props> = ({ data }) => {
@@ -40,28 +40,29 @@ const Articles: NextPage<Props> = ({ data }) => {
           <div className="mx-auto hidden sm:block">
             <div className="mb-4 relative mx-auto">
               <Image
-                src={data.results[0].articleImage}
+                src={data[0].articleImage}
                 objectFit="cover"
                 objectPosition="top"
                 width={1200}
                 height={600}
                 className="rounded-lg"
-                alt={data.results[0].title}
+                alt={data[0].title}
               />
             </div>
             <div>
               <p className="text-2xl font-bold mb-2 text-black-light">
-                {data.results[0].title}
+                {data[0].title}
               </p>
-              <p className="text-justify">{data.results[0].preview}</p>
+              <p className="text-justify">{data[0].preview}</p>
             </div>
           </div>
         )}
       </section>
       <section className="flex gap-12 flex-wrap justify-center pb-12 sm:pb-20">
-        {data?.results.map((article) => (
+        {data?.map((article) => (
           <ArticleCard
             key={article.id}
+            id={article.id}
             imageURL={article.articleImage}
             title={article.title}
             preview={article.preview}
@@ -73,9 +74,9 @@ const Articles: NextPage<Props> = ({ data }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const result = await fetch(`${BASE_URL}/article`);
-  const data = (await result.json()) as ArticleList;
-  return { props: { data } };
+  const { data } = await fetchArticles();
+
+  return { props: { data: data.results } };
 };
 
 export default Articles;
