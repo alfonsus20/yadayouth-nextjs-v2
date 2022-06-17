@@ -12,6 +12,14 @@ import VisionImg from "../public/about/vision.jpg";
 
 export const BASE_URL = "https://api.yada-youth.id/api";
 
+export const LINK_PATHS = [
+  { href: "/", name: "Beranda" },
+  { href: "/about", name: "Tentang Kami" },
+  { href: "/articles", name: "Artikel" },
+  { href: "/donate", name: "Donasi" },
+  { href: "#contact", name: "Kontak Kami" },
+];
+
 export const IMPACTS = [
   {
     image: Impact1Img,

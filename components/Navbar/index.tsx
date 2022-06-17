@@ -1,32 +1,34 @@
+import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import HamburgerMenu from "react-hamburger-menu";
+import { LINK_PATHS } from "../../utils/constants";
 
 const Navbar = () => {
+  const { pathname } = useRouter();
+
   return (
     <div className="px-8 py-2 flex justify-between items-center sticky top-0 bg-white z-20">
-      <Link href='/'>
+      <Link href="/">
         <a className="w-16 h-16">
           <Image width={200} height={200} src="/logo.png" alt="logo" />
         </a>
       </Link>
       <div className="hidden md:flex">
         <div>
-          <Link href="/">
-            <a className="px-4">Beranda</a>
-          </Link>
-          <Link href="/about">
-            <a className="px-4">Tentang Kami</a>
-          </Link>
-          <Link href="/articles">
-            <a className="px-4">Artikel</a>
-          </Link>
-          <Link href="/donate">
-            <a className="px-4">Donasi</a>
-          </Link>
-          <Link href="#contact">
-            <a className="px-4">Kontak Kami</a>
-          </Link>
+          {LINK_PATHS.map((link, idx) => (
+            <Link href={link.href} key={idx}>
+              <a
+                className={cn("px-4 relative", {
+                  "font-bold after:absolute after:w-8 after:h-[4px] after:bg-blue after:-bottom-2 after:transform after:-translate-x-1/2 after:left-1/2 after:right-1/2":
+                    pathname === link.href,
+                })}
+              >
+                {link.name}
+              </a>
+            </Link>
+          ))}
         </div>
         <div className="px-4">ID</div>
       </div>

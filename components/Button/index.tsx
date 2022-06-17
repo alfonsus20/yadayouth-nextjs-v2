@@ -20,7 +20,7 @@ const Button = ({
 }: Props) => {
   return (
     <button
-      className={cn("hover:opacity-90 transition-opacity", {
+      className={cn("hover:opacity-90 transition-opacity disabled:opacity-75", {
         rounded: shape === "rounded",
         "rounded-full": shape === "pill",
         "bg-blue": appearance === "primary",
