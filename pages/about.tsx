@@ -81,7 +81,7 @@ const About = () => {
                 Youth Indonesia.
               </p>
             </div>
-            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row gap-8 mb-12 xs:mb-28">
+            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-28">
               <div className="rounded-full overflow-hidden w-full md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
                 <Image src={Logo} alt="logo" width={250} height={250} />
               </div>

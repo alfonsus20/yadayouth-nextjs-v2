@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { DonationCard } from "../components/Card";
 import DonationBg from "../public/bg/home.jpg";
-import GopayLogo from "../public/donate/gopay.png";
-import MandiriLogo from "../public/donate/mandiri.png";
+import GopayLogo from "../public/donate/gopay.svg";
+import MandiriLogo from "../public/donate/mandiri.svg";
 import { DONATION_AIMS } from "../utils/constants";
 
 const Donate = () => {
@@ -12,7 +12,7 @@ const Donate = () => {
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"
       >
-        <div className="max-w-screen-2xl px-8 sm:px-16">
+        <div className="max-w-screen-2xl px-8 py-16 xs:px-16">
           <div className="max-w-3xl relative z-10 pb-12">
             <h1 className="text-[2.5rem] sm:text-5xl font-semibold leading-normal">
               Melalui donasi yang baik, Anda dapat memberikan dampak positif
@@ -28,7 +28,7 @@ const Donate = () => {
           placeholder="blur"
         />
       </section>
-      <section className="max-w-screen-xl mx-auto px-8 xs:px-16">
+      <section className="max-w-screen-xl mx-auto px-8 py-16 xs:px-16">
         <h2 className="font-bold text-center text-4xl mb-12">
           Seluruh dana akan digunakan untuk{" "}
         </h2>
@@ -38,7 +38,7 @@ const Donate = () => {
           ))}
         </div>
       </section>
-      <section className="max-w-screen-xl mx-auto px-8 xs:px-16">
+      <section className="max-w-screen-xl mx-auto px-8 py-16 xs:px-16">
         <h2 className="font-bold text-center text-4xl mb-12">
           Bagaimana Cara Donasi ?
         </h2>
@@ -46,12 +46,7 @@ const Donate = () => {
           <div className="space-y-4">
             <div className="flex gap-x-6">
               <div className="flex-none w-32">
-                <Image
-                  src={MandiriLogo}
-                  alt="mandiri"
-                  width={600}
-                  height={160}
-                />
+                <Image src={MandiriLogo} alt="mandiri" />
               </div>
               <div>
                 <p className="font-bold">1330016450835</p>
@@ -60,10 +55,10 @@ const Donate = () => {
             </div>
             <div className="flex gap-x-6">
               <div className="flex-none w-32">
-                <Image src={GopayLogo} alt="gopay" width={600} height={150} />
+                <Image src={GopayLogo} alt="gopay" />
               </div>
               <div>
-                <p className="font-bold">1330016450835</p>
+                <p className="font-bold">081230269075</p>
                 <p>a/n indira.</p>
               </div>
             </div>
