@@ -43,7 +43,7 @@ const About = () => {
         />
         <div className="absolute top-0 left-0 bottom-0 right-0 bg-neutral-900 opacity-50"></div>
       </section>
-      <section className="max-w-screen-xl mx-auto p-16 grid grid-cols-2 gap-x-10">
+      <section className="max-w-screen-xl mx-auto p-16 grid sm:grid-cols-2 gap-10">
         {VISION_MISSION.map((item, idx) => (
           <AboutCard key={idx} {...item} />
         ))}
@@ -54,13 +54,11 @@ const About = () => {
             Behind Yada Youth
           </h3>
           <div className="relative">
-            <div className="absolute top-1/2 transform -translate-y-1/2 right-0 w-20 h-[75%] flex flex-col justify-between items-center">
+            <div className="absolute top-1/2 transform -translate-y-1/2 right-0 w-20 h-[75%] hidden lg:flex flex-col justify-between items-center">
               <div className="bg-orange h-12 w-12 rounded-full"></div>
               <div className="bg-orange h-12 w-12 rounded-full mb-16"></div>
               <div className="bg-orange h-12 w-12 rounded-full"></div>
-              <div className="w-4  absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]">
-
-              </div>
+              <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"/>
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-20">
               <div className="rounded-full border-4 border-white w-48 h-48 overflow-hidden absolute -top-20 -left-12">
@@ -83,8 +81,8 @@ const About = () => {
                 Youth Indonesia.
               </p>
             </div>
-            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex gap-8 items-center mb-28">
-              <div className="rounded-full overflow-hidden w-56 h-56 flex-shrink-0">
+            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row gap-8 mb-28">
+              <div className="rounded-full overflow-hidden w-full md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
                 <Image src={Logo} alt="logo" width={250} height={250} />
               </div>
               <div>
