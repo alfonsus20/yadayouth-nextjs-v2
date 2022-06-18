@@ -2,11 +2,22 @@ import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import HamburgerMenu from "react-hamburger-menu";
 import { LINK_PATHS } from "../../utils/constants";
+import NavbarMobile from "./navbar.mobile";
 
 const Navbar = () => {
   const { pathname } = useRouter();
+  const [isNavbarMobileOpen, setIsNavbarMobileOpen] = useState<boolean>(false);
+
+  const toggleNavbarMobile = () => {
+    setIsNavbarMobileOpen((prev) => !prev);
+  };
+
+  const closeNavbarMobile = () => {
+    setIsNavbarMobileOpen(false);
+  };
 
   return (
     <div className="px-8 py-2 flex justify-between items-center sticky top-0 bg-white z-20">
@@ -34,8 +45,8 @@ const Navbar = () => {
       </div>
       <div className="block md:hidden">
         <HamburgerMenu
-          isOpen={false}
-          menuClicked={() => {}}
+          isOpen={isNavbarMobileOpen}
+          menuClicked={toggleNavbarMobile}
           width={18}
           height={15}
           strokeWidth={2}
@@ -45,6 +56,10 @@ const Navbar = () => {
           animationDuration={0.5}
         />
       </div>
+      <NavbarMobile
+        isNavbarMobileOpen={isNavbarMobileOpen}
+        onClose={closeNavbarMobile}
+      />
     </div>
   );
 };

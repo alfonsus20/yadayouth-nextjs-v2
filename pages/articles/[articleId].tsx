@@ -10,7 +10,7 @@ type Props = {
 
 const ArticleDetail: NextPage<Props> = ({ data }) => {
   return (
-    <div className="max-w-screen-xl mx-auto pt-8">
+    <div className="max-w-screen-xl mx-auto pt-8 px-8 lg:px-0">
       <div className="mb-4">
         <h2 className="text-gray-600 font-bold text-3xl">{data.title}</h2>
         <p className="text-orange-500">{dayjs(data.timePublised).format("dddd, DD MMMM YYYY")}</p>
