@@ -23,7 +23,7 @@ const Home: NextPage<Props> = ({ data }) => {
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"
       >
-        <div className="max-w-screen-2xl px-16">
+        <div className="max-w-screen-2xl px-8 md:px-16">
           <div className="max-w-xl relative z-10 pb-12">
             <h1 className="text-5xl font-semibold">
               PEMBERDAYAAN ANAK UNTUK MASA DEPAN
@@ -44,10 +44,10 @@ const Home: NextPage<Props> = ({ data }) => {
         />
       </section>
       <section className="max-w-[1200px] mx-auto p-16">
-        <h2 className="font-bold text-4xl text-center mb-32">
+        <h2 className="font-bold text-4xl text-center mb-16 md:mb-32">
           Dampak Kami
         </h2>
-        <div className="grid grid-cols-12 gap-10">
+        <div className="grid grid-cols-12 gap-6 md:gap-10">
           {IMPACTS.map((impact, idx) => (
             <ImpactCard {...impact} key={idx} />
           ))}
