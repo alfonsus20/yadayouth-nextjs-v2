@@ -13,7 +13,7 @@ const NavbarMobile = ({ isNavbarMobileOpen, onClose }: Props) => {
   return (
     <div
       className={cn(
-        "w-full bg-white absolute top-0 mt-20 flex md:hidden flex-col items-center transition-transform left-0 transform duration-700",
+        "w-full bg-white fixed top-20 flex md:hidden flex-col items-center transition-transform left-0 transform duration-700 z-20",
         {
           "translate-x-0": isNavbarMobileOpen,
           "-translate-x-full": !isNavbarMobileOpen,

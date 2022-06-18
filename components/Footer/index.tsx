@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-8 max-w-screen-xl mx-auto w-full">
+    <div className="px-8 max-w-screen-xl mx-auto w-full" id='contact'>
       <div className="flex justify-between items-center py-8 flex-col sm:flex-row gap-2">
         <div className="flex items-center gap-x-2 flex-col sm:flex-row">
           <Link href="/">

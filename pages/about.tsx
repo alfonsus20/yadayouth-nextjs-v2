@@ -43,13 +43,13 @@ const About = () => {
         />
         <div className="absolute top-0 left-0 bottom-0 right-0 bg-neutral-900 opacity-50"></div>
       </section>
-      <section className="max-w-screen-xl mx-auto p-16 grid sm:grid-cols-2 gap-10">
+      <section className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10">
         {VISION_MISSION.map((item, idx) => (
           <AboutCard key={idx} {...item} />
         ))}
       </section>
       <section className="bg-gradient-to-b from-[#E5AB1A] rounded-t-[80px]">
-        <div className="max-w-screen-lg mx-auto p-16">
+        <div className="max-w-screen-lg mx-auto px-8 xs:px-16 py-16">
           <h3 className="text-white text-4xl font-bold text-center mb-28">
             Behind Yada Youth
           </h3>
@@ -61,10 +61,10 @@ const About = () => {
               <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"/>
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-20">
-              <div className="rounded-full border-4 border-white w-48 h-48 overflow-hidden absolute -top-20 -left-12">
-                <Image src={HanifImg} alt="hanif" width={250} height={250} />
+              <div className="rounded-full border-4 border-white w-80 h-80 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
+                <Image src={HanifImg} alt="hanif" width={250} height={250}  />
               </div>
-              <h2 className="font-bold text-4xl mt-6 mb-8 ml-32">Hanif</h2>
+              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">Hanif</h2>
               <p>
                 Hanif adalah pendiri dan direktur Yada Youth Indonesia. Melalui
                 kehidupan kampusnya, dia memiliki latar belakang akademis yang
@@ -94,7 +94,7 @@ const About = () => {
               </div>
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto">
-              <div className="rounded-full border-4 border-white w-48 h-48 overflow-hidden absolute -top-20 -left-12">
+              <div className="rounded-full border-4 border-white w-80 h-80 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
                 <Image
                   src={StephaniImg}
                   alt="stephani"
@@ -102,7 +102,7 @@ const About = () => {
                   height={250}
                 />
               </div>
-              <h2 className="font-bold text-4xl mt-6 mb-8 ml-32">Stephani</h2>
+              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">Stephani</h2>
               <p>
                 Stephani adalah wakil direktur Yada Youth Indonesia yang saat
                 ini menjadi mahasiswa di Universitas Gadjah Mada. Sepanjang
@@ -125,7 +125,7 @@ const About = () => {
         </div>
       </section>
       <section className="bg-gradient-to-b from-[#686DEC] rounded-t-[80px]">
-        <div className="max-w-screen-xl mx-auto p-16">
+        <div className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16">
           <h3 className="text-white text-4xl font-bold text-center mb-8">
             Program yang Pernah Dilakukan
           </h3>
