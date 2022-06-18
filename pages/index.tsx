@@ -23,7 +23,7 @@ const Home: NextPage<Props> = ({ data }) => {
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"
       >
-        <div className="max-w-screen-2xl px-8 md:px-16">
+        <div className="max-w-screen-2xl px-8 xs:px-16">
           <div className="max-w-xl relative z-10 pb-12">
             <h1 className="text-5xl font-semibold">
               PEMBERDAYAAN ANAK UNTUK MASA DEPAN
@@ -43,7 +43,7 @@ const Home: NextPage<Props> = ({ data }) => {
           placeholder="blur"
         />
       </section>
-      <section className="max-w-[1200px] mx-auto p-16">
+      <section className="max-w-[1200px] mx-auto px-8 xs:px-16 py-16">
         <h2 className="font-bold text-4xl text-center mb-16 md:mb-32">
           Dampak Kami
         </h2>
@@ -62,7 +62,7 @@ const Home: NextPage<Props> = ({ data }) => {
           placeholder="blur"
           objectPosition="bottom"
         />
-        <div className="px-16 pt-32 pb-56 max-w-screen-2xl mx-auto relative z-10">
+        <div className="px-8 xs:px-16 pt-32 pb-56 max-w-screen-2xl mx-auto relative z-10">
           <h2 className="font-bold text-4xl text-center mb-32 text-white">
             Layanan Kami
           </h2>
@@ -73,7 +73,7 @@ const Home: NextPage<Props> = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="max-w-screen-2xl mx-auto p-16 rounded-t-[4.5rem] bg-white relative bottom-20">
+      <section className="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20">
         <h2 className="font-bold text-4xl text-center mb-8">Recent Post</h2>
         {data && <Carousel data={data} />}
       </section>

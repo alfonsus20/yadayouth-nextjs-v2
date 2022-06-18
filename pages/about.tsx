@@ -50,7 +50,7 @@ const About = () => {
       </section>
       <section className="bg-gradient-to-b from-[#E5AB1A] rounded-t-[80px]">
         <div className="max-w-screen-lg mx-auto px-8 xs:px-16 py-16">
-          <h3 className="text-white text-4xl font-bold text-center mb-28">
+          <h3 className="text-white text-4xl font-bold text-center mb-16 xs:mb-28">
             Behind Yada Youth
           </h3>
           <div className="relative">
@@ -60,7 +60,7 @@ const About = () => {
               <div className="bg-orange h-12 w-12 rounded-full"></div>
               <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"/>
             </div>
-            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-20">
+            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-8 xs:mb-20">
               <div className="rounded-full border-4 border-white w-80 h-80 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
                 <Image src={HanifImg} alt="hanif" width={250} height={250}  />
               </div>
@@ -81,7 +81,7 @@ const About = () => {
                 Youth Indonesia.
               </p>
             </div>
-            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row gap-8 mb-28">
+            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row gap-8 mb-12 xs:mb-28">
               <div className="rounded-full overflow-hidden w-full md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
                 <Image src={Logo} alt="logo" width={250} height={250} />
               </div>

@@ -28,7 +28,7 @@ const Donate = () => {
           placeholder="blur"
         />
       </section>
-      <section className="max-w-screen-xl mx-auto p-16">
+      <section className="max-w-screen-xl mx-auto px-8 xs:px-16">
         <h2 className="font-bold text-center text-4xl mb-12">
           Seluruh dana akan digunakan untuk{" "}
         </h2>
@@ -38,7 +38,7 @@ const Donate = () => {
           ))}
         </div>
       </section>
-      <section className="max-w-screen-xl mx-auto p-16">
+      <section className="max-w-screen-xl mx-auto px-8 xs:px-16">
         <h2 className="font-bold text-center text-4xl mb-12">
           Bagaimana Cara Donasi ?
         </h2>
@@ -46,7 +46,12 @@ const Donate = () => {
           <div className="space-y-4">
             <div className="flex gap-x-6">
               <div className="flex-none w-32">
-                <Image src={MandiriLogo} alt="mandiri" width={600} height={160} />
+                <Image
+                  src={MandiriLogo}
+                  alt="mandiri"
+                  width={600}
+                  height={160}
+                />
               </div>
               <div>
                 <p className="font-bold">1330016450835</p>
