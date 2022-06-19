@@ -56,7 +56,7 @@ const About = () => {
           <div className="relative">
             <div className="absolute top-1/2 transform -translate-y-1/2 right-0 w-20 h-[75%] hidden lg:flex flex-col justify-between items-center">
               <div className="bg-orange h-12 w-12 rounded-full"></div>
-              <div className="bg-orange h-12 w-12 rounded-full mb-16"></div>
+              <div className="bg-orange h-12 w-12 rounded-full mb-28"></div>
               <div className="bg-orange h-12 w-12 rounded-full"></div>
               <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"/>
             </div>
@@ -81,7 +81,7 @@ const About = () => {
                 Youth Indonesia.
               </p>
             </div>
-            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-28">
+            <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-36">
               <div className="rounded-full overflow-hidden w-full md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
                 <Image src={Logo} alt="logo" width={250} height={250} />
               </div>
