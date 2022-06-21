@@ -12,12 +12,12 @@ const Impact = ({ image, color, title, description }: Props) => {
   return (
     <div
       className={cn(
-        "col-span-12 sm:col-span-6 md:col-span-3 min-h-[350px] flex flex-col justify-center rounded-3xl px-8 relative shadow-lg",
+        "col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg",
         {
-          "bg-orange shadow-orange/50": color === "orange",
-          "bg-green shadow-green/50": color === "green",
-          "bg-yellow shadow-yellow/50": color === "yellow",
-          "bg-blue shadow-blue/50": color === "blue",
+          "bg-neon--orange": color === "orange",
+          "bg-neon--green": color === "green",
+          "bg-neon--yellow": color === "yellow",
+          "bg-neon--blue": color === "blue",
         }
       )}
     >

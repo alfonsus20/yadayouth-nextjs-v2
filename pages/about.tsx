@@ -1,17 +1,28 @@
+import { GetStaticProps, NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/Button";
 import { AboutCard } from "../components/Card";
+import { EventCarousel } from "../components/Carousel";
+import { fetchPastEvents } from "../models/event";
 import AboutBg from "../public/bg/about.jpg";
 import HanifImg from "../public/founder/hanif.png";
 import StephaniImg from "../public/founder/stephani.png";
 import Logo from "../public/logo.png";
-
+import { Event } from "../types/entities/event";
 import { VISION_MISSION } from "../utils/constants";
 
-const About = () => {
+type Props = {
+  data: Event[];
+};
+
+const About: NextPage<Props> = ({ data }) => {
   return (
     <div>
+      <Head>
+        <title>Tentang Kami</title>
+      </Head>
       <section
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex justify-center items-center"
@@ -58,13 +69,21 @@ const About = () => {
               <div className="bg-orange h-12 w-12 rounded-full"></div>
               <div className="bg-orange h-12 w-12 rounded-full mb-28"></div>
               <div className="bg-orange h-12 w-12 rounded-full"></div>
-              <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"/>
+              <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]" />
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-8 xs:mb-20">
               <div className="rounded-full border-4 border-white w-80 h-80 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
-                <Image src={HanifImg} alt="hanif" width={250} height={250}  />
+                <Image
+                  src={HanifImg}
+                  alt="hanif"
+                  width={250}
+                  height={250}
+                  placeholder="blur"
+                />
               </div>
-              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">Hanif</h2>
+              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">
+                Hanif
+              </h2>
               <p>
                 Hanif adalah pendiri dan direktur Yada Youth Indonesia. Melalui
                 kehidupan kampusnya, dia memiliki latar belakang akademis yang
@@ -83,7 +102,13 @@ const About = () => {
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-36">
               <div className="rounded-full overflow-hidden w-full md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
-                <Image src={Logo} alt="logo" width={250} height={250} />
+                <Image
+                  src={Logo}
+                  alt="logo"
+                  width={250}
+                  height={250}
+                  placeholder="blur"
+                />
               </div>
               <div>
                 <h2 className="font-bold text-4xl mb-4">YadaYouth.id</h2>
@@ -100,9 +125,12 @@ const About = () => {
                   alt="stephani"
                   width={250}
                   height={250}
+                  placeholder="blur"
                 />
               </div>
-              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">Stephani</h2>
+              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">
+                Stephani
+              </h2>
               <p>
                 Stephani adalah wakil direktur Yada Youth Indonesia yang saat
                 ini menjadi mahasiswa di Universitas Gadjah Mada. Sepanjang
@@ -125,14 +153,25 @@ const About = () => {
         </div>
       </section>
       <section className="bg-gradient-to-b from-[#686DEC] rounded-t-[80px]">
-        <div className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16">
-          <h3 className="text-white text-4xl font-bold text-center mb-8">
+        <div className="py-16">
+          <h3 className="text-white text-4xl font-bold text-center mb-12">
             Program yang Pernah Dilakukan
           </h3>
+          <div className="overflow-x-clip sm:py-16">
+            <div className="transform sm:scale-150">
+              <EventCarousel data={data} />
+            </div>
+          </div>
         </div>
       </section>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await fetchPastEvents();
+  console.log(data);
+  return { props: { data: data.results } };
 };
 
 export default About;

@@ -17,15 +17,23 @@ module.exports = {
         },
         blue: {
           DEFAULT: "#222AEF",
+          light: "#696EED",
+          lotus: "#686DEC",
         },
         orange: {
           DEFAULT: "#FF4C2E",
+          light: "#E14B4B",
         },
         yellow: {
-          DEFAULT: "#FBBB1B",
+          DEFAULT: "#E5AB1A",
+          light: "#FBBB1B",
         },
         green: {
           DEFAULT: "#23B70B",
+        },
+        red: {
+          DEFAULT: "#E14B4B",
+          light: "#FF5C5C",
         },
       },
     },

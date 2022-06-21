@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { DonationCard } from "../components/Card";
 import DonationBg from "../public/bg/home.jpg";
@@ -8,6 +9,7 @@ import { DONATION_AIMS } from "../utils/constants";
 const Donate = () => {
   return (
     <div>
+      <Head>Donasi</Head>
       <section
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"

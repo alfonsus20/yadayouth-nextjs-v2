@@ -11,10 +11,10 @@ const Donation = ({ color, description }: Props) => {
       className={cn(
         "col-span-1 rounded-xl p-8 relative shadow-lg text-white",
         {
-          "bg-orange shadow-orange/50": color === "orange",
-          "bg-green shadow-green/50": color === "green",
-          "bg-yellow shadow-yellow/50": color === "yellow",
-          "bg-blue shadow-blue/50": color === "blue",
+          "bg-neon--orange": color === "orange",
+          "bg-neon--green": color === "green",
+          "bg-neon--yellow": color === "yellow",
+          "bg-neon--blue": color === "blue",
         }
       )}
     >

@@ -16,7 +16,7 @@ const Articles: NextPage<Props> = ({ data }) => {
   return (
     <div className="max-w-screen-xl mx-auto px-8">
       <Head>
-        <title>Articles</title>
+        <title>Artikel</title>
       </Head>
       <section className="pt-6 pb-4 sm:pb-12 flex flex-col">
         <div className="flex justify-between sm:items-center mb-4 flex-col sm:flex-row gap-y-4">

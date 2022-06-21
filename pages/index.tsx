@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { ImpactCard, ServiceCard } from "../components/Card";
-import Carousel from "../components/Carousel";
+import { InstagramCarousel } from "../components/Carousel";
 import { fetchIGPosts } from "../models/igPost";
 import HomeBg from "../public/bg/home.jpg";
 import ServiceBg from "../public/bg/service.jpg";
@@ -75,7 +75,7 @@ const Home: NextPage<Props> = ({ data }) => {
       </section>
       <section className="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20">
         <h2 className="font-bold text-4xl text-center mb-8">Recent Post</h2>
-        {data && <Carousel data={data} />}
+        {data && <InstagramCarousel data={data} />}
       </section>
     </div>
   );

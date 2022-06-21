@@ -1,6 +1,7 @@
 import cn from "classnames";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/router";
+import Button from "../../Button";
 
 type Props = {
   image: StaticImageData;
@@ -9,6 +10,7 @@ type Props = {
   description: string;
   buttonText: string;
   buttonHref: string;
+  isOpenNewPage?: boolean;
 };
 
 const Service = ({
@@ -18,15 +20,18 @@ const Service = ({
   description,
   buttonText,
   buttonHref,
+  isOpenNewPage = false,
 }: Props) => {
+  const router = useRouter();
+
   return (
     <div
       className={cn(
         "relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white",
         {
-          "bg-[#E5AB1A]": color === "yellow",
-          "bg-[#E14B4B]": color === "red",
-          "bg-[#686DEC]": color === "blue",
+          "bg-yellow": color === "yellow",
+          "bg-red": color === "red",
+          "bg-blue-lotus": color === "blue",
         }
       )}
     >
@@ -35,17 +40,27 @@ const Service = ({
       </div>
       <h3 className="font-bold text-xl mb-1">{title}</h3>
       <p className="text-lg mb-5">{description}</p>
-      <Link href={buttonHref}>
-        <a
-          className={cn("px-10 py-2 rounded-full", {
-            "bg-[#FF5C5C]": color === "red",
-            "bg-[#FBBB1B]": color === "yellow",
-            "bg-[#222AEF]": color === "blue",
-          })}
-        >
-          {buttonText}
-        </a>
-      </Link>
+      <Button
+        shape="pill"
+        appearance={`${
+          color === "red"
+            ? "danger"
+            : color === "yellow"
+            ? "warning"
+            : color === "blue"
+            ? "info"
+            : "default"
+        }`}
+        onClick={() => {
+          if (isOpenNewPage) {
+            window.open(buttonHref);
+          } else {
+            router.push(`/${buttonHref}`);
+          }
+        }}
+      >
+        {buttonText}
+      </Button>
     </div>
   );
 };

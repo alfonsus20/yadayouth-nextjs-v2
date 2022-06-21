@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
 html {
-  // scroll-behavior: smooth;
-
   @media screen and (max-width: 1280px) {
     font-size: 90%;
   }
@@ -23,6 +21,11 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.is-box {
+  @apply rounded-none;
 }
 
 .is-rounded {
@@ -31,4 +34,22 @@ body {
 
 .is-pill {
   @apply rounded-full;
+}
+
+.bg-neon {
+  &--yellow {
+    @apply bg-yellow-light shadow-yellow/50;
+  }
+
+  &--blue {
+    @apply bg-blue shadow-blue/50;
+  }
+
+  &--green {
+    @apply bg-green shadow-green/50;
+  }
+
+  &--orange {
+    @apply bg-orange shadow-orange/50;
+  }
 }
