@@ -35,7 +35,6 @@ const Navbar = ({ onHamburgerButtonClick, isNavbarMobileOpen }: Props) => {
             </Link>
           ))}
         </div>
-        <div className="px-4">ID</div>
       </div>
       <div className="block md:hidden">
         <HamburgerMenu

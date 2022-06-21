@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="px-8 max-w-screen-xl mx-auto w-full" id='contact'>
+    <div className="px-8 max-w-screen-xl mx-auto w-full" id="contact">
       <div className="flex justify-between items-center py-8 flex-col sm:flex-row gap-2">
         <div className="flex items-center gap-x-2 flex-col sm:flex-row">
           <Link href="/">
@@ -19,22 +19,34 @@ const Footer = () => {
         <div>
           <ul className="flex gap-x-4">
             <li>
-              <Image
-                src="/sosmed/facebook.svg"
-                alt="facebook"
-                className="transition cursor-pointer scale-75 hover:scale-100"
-                width={40}
-                height={40}
-              />
+              <a
+                href="https://www.instagram.com/yadayouth.id"
+                target="_blank"
+                rel="noopen noreferrer"
+              >
+                <Image
+                  src="/sosmed/facebook.svg"
+                  alt="facebook"
+                  className="transition cursor-pointer scale-75 hover:scale-100"
+                  width={40}
+                  height={40}
+                />
+              </a>
             </li>
             <li>
-              <Image
-                src="/sosmed/instagram.svg"
-                alt="instagram"
-                className="transition cursor-pointer scale-75 hover:scale-100"
-                width={40}
-                height={40}
-              />
+              <a
+                href="https://www.instagram.com/yadayouth.id"
+                target="_blank"
+                rel="noopen noreferrer"
+              >
+                <Image
+                  src="/sosmed/instagram.svg"
+                  alt="instagram"
+                  className="transition cursor-pointer scale-75 hover:scale-100"
+                  width={40}
+                  height={40}
+                />
+              </a>
             </li>
             <li>
               <Image

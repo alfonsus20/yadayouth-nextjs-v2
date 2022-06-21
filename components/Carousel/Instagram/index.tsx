@@ -53,12 +53,17 @@ const Instagram = ({ data }: Props) => {
 
   return (
     <Slider {...settings}>
-      {data.map((post,idx) => (
-        <div key={idx}>
+      {data.map((post, idx) => (
+        <a
+          href={post.permalink}
+          key={idx}
+          target="_blank"
+          rel="noopen noreferrer"
+        >
           <div className="p-4 flex justify-center">
             <Image src={post.media_url} alt="post" width={450} height={450} />
           </div>
-        </div>
+        </a>
       ))}
     </Slider>
   );
