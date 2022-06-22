@@ -1,56 +1,55 @@
 import cn from "classnames";
 import Image from "next/image";
-import { useState } from "react";
-import Slider, { Settings } from "react-slick";
+import Carousel, { DotProps } from "react-multi-carousel";
 import { Event } from "../../../types/entities/event";
 
 type Props = {
   data: Event[];
 };
 
-const Event = ({ data }: Props) => {
-  const [activeSlide, setActiveSlide] = useState<number>(0);
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 576 },
+    items: 3,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 576, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
+};
 
-  const settings: Settings = {
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: <></>,
-    prevArrow: <></>,
-    beforeChange: (_: number, next: number) => setActiveSlide(next),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-    ],
-    dots: true,
-    customPaging: (i) => (
-      <div
-        className={cn("h-2 w-2 mt-4 rounded-full transform sm:scale-75", {
-          "bg-blue": activeSlide === i,
-          "bg-gray": activeSlide !== i,
-        })}
-      />
-    ),
-  };
-
+const CustomDot = ({ onClick, ...rest }: DotProps) => {
+  const { active } = rest;
   return (
-    <Slider {...settings}>
+    <button
+      className={cn("w-2 h-2 transform sm:scale-75 rounded-full mx-3", {
+        "bg-blue": active,
+        "bg-gray": !active,
+      })}
+      onClick={onClick}
+    ></button>
+  );
+};
+
+const Event = ({ data }: Props) => {
+  return (
+    <Carousel
+      responsive={responsive}
+      arrows={false}
+      infinite={true}
+      showDots={true}
+      autoPlay={true}
+      customDot={<CustomDot />}
+    >
       {data.map((event, idx) => (
-        <div key={idx} className="px-4 relative">
+        <div key={idx} className="px-4 relative mb-10 xs:mb-5">
           <div className="flex justify-center">
             <Image
               src={event.images[0].image}
@@ -67,7 +66,7 @@ const Event = ({ data }: Props) => {
           </div>
         </div>
       ))}
-    </Slider>
+    </Carousel>
   );
 };
 

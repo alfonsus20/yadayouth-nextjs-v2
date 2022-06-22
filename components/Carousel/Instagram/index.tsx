@@ -1,58 +1,53 @@
 import cn from "classnames";
 import Image from "next/image";
-import { useState } from "react";
-import Slider, { Settings } from "react-slick";
+import Carousel, { DotProps } from "react-multi-carousel";
 import { IGPost } from "../../../types/entities/igPost";
 
 type Props = {
   data: IGPost[];
 };
 
-const Instagram = ({ data }: Props) => {
-  const [activeSlide, setActiveSlide] = useState<number>(0);
-  const [slider, setSlider] = useState<Slider>();
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 768, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
+};
 
-  const settings: Settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    nextArrow: <></>,
-    prevArrow: <></>,
-    beforeChange: (_: number, next: number) => setActiveSlide(next),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-    ],
-    dots: true,
-    customPaging: (i) => (
-      <div
-        className={cn("h-2 w-2 mt-4 rounded-full", {
-          "bg-blue": activeSlide === i,
-          "bg-gray": activeSlide !== i,
-        })}
-      />
-    ),
-  };
-
+const CustomDot = ({ onClick, ...rest }: DotProps) => {
+  const { active } = rest;
   return (
-    <Slider {...settings}>
+    <button
+      className={cn("w-2 h-2 rounded-full mx-3", {
+        "bg-blue": active,
+        "bg-gray": !active,
+      })}
+      onClick={onClick}
+    ></button>
+  );
+};
+
+const Instagram = ({ data }: Props) => {
+  return (
+    <Carousel
+      responsive={responsive}
+      arrows={false}
+      infinite={true}
+      showDots={true}
+      customDot={<CustomDot />}
+      autoPlay={true}
+    >
       {data.map((post, idx) => (
         <a
           href={post.permalink}
@@ -60,12 +55,12 @@ const Instagram = ({ data }: Props) => {
           target="_blank"
           rel="noopen noreferrer"
         >
-          <div className="p-4 flex justify-center">
+          <div className="p-4 flex justify-center mb-2">
             <Image src={post.media_url} alt="post" width={450} height={450} />
           </div>
         </a>
       ))}
-    </Slider>
+    </Carousel>
   );
 };
 
