@@ -10,15 +10,11 @@ type Props = {
 
 const Event = ({ data }: Props) => {
   const [activeSlide, setActiveSlide] = useState<number>(0);
-  const [slider, setSlider] = useState<Slider>();
 
   const settings: Settings = {
     infinite: true,
-    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
     nextArrow: <></>,
     prevArrow: <></>,
     beforeChange: (_: number, next: number) => setActiveSlide(next),

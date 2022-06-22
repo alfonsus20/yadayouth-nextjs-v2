@@ -54,7 +54,7 @@ const About: NextPage<Props> = ({ data }) => {
         />
         <div className="absolute top-0 left-0 bottom-0 right-0 bg-neutral-900 opacity-50"></div>
       </section>
-      <section className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10">
+      <section className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10" id="selengkapnya">
         {VISION_MISSION.map((item, idx) => (
           <AboutCard key={idx} {...item} />
         ))}

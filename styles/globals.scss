@@ -6,6 +6,8 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 html {
+  scroll-padding: 80px;
+
   @media screen and (max-width: 1280px) {
     font-size: 90%;
   }

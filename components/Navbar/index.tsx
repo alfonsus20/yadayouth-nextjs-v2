@@ -14,7 +14,7 @@ const Navbar = ({ onHamburgerButtonClick, isNavbarMobileOpen }: Props) => {
   const { pathname } = useRouter();
 
   return (
-    <div className="px-8 py-2 flex justify-between items-center sticky top-0 bg-white z-20">
+    <div className="px-8 py-2 flex justify-between items-center sticky top-0 bg-white z-30">
       <Link href="/">
         <a className="w-16 h-16">
           <Image width={200} height={200} src="/logo.png" alt="logo" />

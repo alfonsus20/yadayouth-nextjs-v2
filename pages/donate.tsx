@@ -16,7 +16,7 @@ const Donate = () => {
       >
         <div className="max-w-screen-2xl px-8 py-16 xs:px-16">
           <div className="max-w-3xl relative z-10 pb-12">
-            <h1 className="text-[2.5rem] sm:text-5xl font-semibold leading-normal">
+            <h1 className="text-[2.5rem] sm:text-5xl font-semibold sm:leading-normal">
               Melalui donasi yang baik, Anda dapat memberikan dampak positif
               bagi pemberdayaan anak-anak di Indonesia!
             </h1>
