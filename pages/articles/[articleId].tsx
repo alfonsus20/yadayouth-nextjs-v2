@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const { data } = await fetchArticlesById(`${articleId}`);
     return { props: { data } };
   } catch (e) {
-    return { props: {}, notFound: true };
+    return { props: {}, notFound: true, revalidate: 60 * 60 * 24 };
   }
 };
 
@@ -51,7 +51,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = data.results.map((article) => ({
     params: { articleId: article.id.toString() },
   }));
-  return { paths, fallback: "blocking", revalidate: 60 * 60 * 24 };
+  return { paths, fallback: "blocking" };
 };
 
 export default ArticleDetail;
