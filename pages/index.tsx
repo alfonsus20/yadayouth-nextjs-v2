@@ -83,7 +83,7 @@ const Home: NextPage<Props> = ({ data }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await fetchIGPosts();
-  return { props: { data: data.results } };
+  return { props: { data: data.results }, revalidate: 60 * 60 * 24 };
 };
 
 export default Home;

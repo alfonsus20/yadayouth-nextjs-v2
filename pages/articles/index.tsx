@@ -61,6 +61,7 @@ const Articles: NextPage<Props> = ({ data }) => {
         router.push({ query: { ...router.query, sortDirection: "" } });
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.query]);
 
   return (
@@ -194,7 +195,7 @@ const Articles: NextPage<Props> = ({ data }) => {
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await fetchArticles();
 
-  return { props: { data: data.results } };
+  return { props: { data: data.results }, revalidate: 60 * 60 * 24 };
 };
 
 export default Articles;

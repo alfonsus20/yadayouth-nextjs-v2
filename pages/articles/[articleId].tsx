@@ -51,7 +51,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = data.results.map((article) => ({
     params: { articleId: article.id.toString() },
   }));
-  return { paths, fallback: "blocking" };
+  return { paths, fallback: "blocking", revalidate: 60 * 60 * 24 };
 };
 
 export default ArticleDetail;
