@@ -96,7 +96,7 @@ export const DONATION_AIMS = [
   {
     color: "orange",
     description:
-      "Bantu Salurkan suplai makanan bernutrisi kepada anak-anak dengan gizi buruk untuk mendukung pemulihan mereka",
+      "Bantu salurkan suplai makanan bernutrisi kepada anak-anak dengan gizi buruk untuk mendukung pemulihan mereka",
   },
   {
     color: "blue",

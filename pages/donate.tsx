@@ -18,7 +18,7 @@ const Donate = () => {
       >
         <div className="max-w-screen-2xl px-8 py-16 xs:px-16">
           <div className="max-w-3xl relative z-10 pb-12">
-            <h1 className="text-[2.5rem] sm:text-5xl font-semibold sm:leading-normal">
+            <h1 className="text-[2.2rem] sm:text-5xl font-semibold sm:leading-normal">
               Melalui donasi yang baik, Anda dapat memberikan dampak positif
               bagi pemberdayaan anak-anak di Indonesia!
             </h1>
@@ -33,7 +33,7 @@ const Donate = () => {
         />
       </section>
       <section className="max-w-screen-xl mx-auto px-8 py-16 xs:px-16">
-        <h2 className="font-bold text-center text-4xl mb-12">
+        <h2 className="font-bold text-center text-3xl xs:text-4xl mb-12">
           Seluruh dana akan digunakan untuk{" "}
         </h2>
         <div className="grid sm:grid-cols-2 gap-8">
@@ -43,7 +43,7 @@ const Donate = () => {
         </div>
       </section>
       <section className="max-w-screen-xl mx-auto px-8 py-16 xs:px-16">
-        <h2 className="font-bold text-center text-4xl mb-12">
+        <h2 className="font-bold text-center text-3xl xs:text-4xl mb-12">
           Bagaimana Cara Donasi ?
         </h2>
         <div className="flex flex-col sm:flex-row items-center gap-12 text-lg">

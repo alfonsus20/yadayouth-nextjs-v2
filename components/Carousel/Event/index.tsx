@@ -53,7 +53,7 @@ const Event = ({ data }: Props) => {
         <div key={idx} className="px-4 relative mb-10 xs:mb-5">
           <div className="flex justify-center">
             <Image
-              src={event.images[0].image}
+              src={event.image}
               alt="event"
               width={1200}
               height={800}

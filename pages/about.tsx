@@ -29,7 +29,7 @@ const About: NextPage<Props> = ({ data }) => {
       >
         <div className="max-w-screen-lg px-16 text-center text-white">
           <div className="relative z-10 pb-8">
-            <h1 className="text-5xl font-bold">TENTANG KAMI</h1>
+            <h1 className="text-3xl xs text-3xl:xs:text-4xl sm:text-5xl font-bold">TENTANG KAMI</h1>
             <div className="bg-blue h-2 w-1/3 my-4 mx-auto rounded-md"></div>
             <p className="text-lg mb-4">
               Yada Youth adalah organisasi nirlaba yang bertujuan untuk fokus
@@ -61,7 +61,7 @@ const About: NextPage<Props> = ({ data }) => {
       </section>
       <section className="bg-gradient-to-b from-[#E5AB1A] rounded-t-[80px]">
         <div className="max-w-screen-lg mx-auto px-8 xs:px-16 py-16">
-          <h3 className="text-white text-4xl font-bold text-center mb-16 xs:mb-28">
+          <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28">
             Behind Yada Youth
           </h3>
           <div className="relative">
@@ -72,19 +72,19 @@ const About: NextPage<Props> = ({ data }) => {
               <div className="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]" />
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-8 xs:mb-20">
-              <div className="rounded-full border-4 border-white w-80 h-80 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
+              <div className="rounded-full border-4 border-white w-64 h-64 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
                 <Image
                   src={HanifImg}
                   alt="hanif"
-                  width={250}
-                  height={250}
+                  width={400}
+                  height={400}
                   placeholder="blur"
                 />
               </div>
-              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">
+              <h2 className="font-bold text-3xl xs:text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">
                 Hanif
               </h2>
-              <p>
+              <p className="text-justify">
                 Hanif adalah pendiri dan direktur Yada Youth Indonesia. Melalui
                 kehidupan kampusnya, dia memiliki latar belakang akademis yang
                 kuat dan sering terlibat dalam kegiatan ekstrakurikuler. Yang
@@ -101,25 +101,25 @@ const About: NextPage<Props> = ({ data }) => {
               </p>
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-36">
-              <div className="rounded-full overflow-hidden w-full md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
+              <div className="rounded-full overflow-hidden w-64 h-64 md:w-56 md:h-56 md:flex-shrink-0 flex justify-center">
                 <Image
                   src={Logo}
                   alt="logo"
-                  width={250}
-                  height={250}
+                  width={400}
+                  height={400}
                   placeholder="blur"
                 />
               </div>
               <div>
-                <h2 className="font-bold text-4xl mb-4">YadaYouth.id</h2>
-                <p>
+                <h2 className="font-bold text-3xl xs:text-4xl mb-4">YadaYouth.id</h2>
+                <p className="text-justify">
                   19 Februari 2021 YadaYouth.id di bangun oleh dua anak muda
                   yaitu Hanif dan Stephani.
                 </p>
               </div>
             </div>
             <div className="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto">
-              <div className="rounded-full border-4 border-white w-80 h-80 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
+              <div className="rounded-full border-4 border-white w-64 h-64 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto">
                 <Image
                   src={StephaniImg}
                   alt="stephani"
@@ -128,10 +128,10 @@ const About: NextPage<Props> = ({ data }) => {
                   placeholder="blur"
                 />
               </div>
-              <h2 className="font-bold text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">
+              <h2 className="font-bold text-3xl xs:text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32">
                 Stephani
               </h2>
-              <p>
+              <p className="text-justify">
                 Stephani adalah wakil direktur Yada Youth Indonesia yang saat
                 ini menjadi mahasiswa di Universitas Gadjah Mada. Sepanjang
                 sekolah menengah, ia dikenal sebagai siswa aktif dengan prestasi
@@ -154,7 +154,7 @@ const About: NextPage<Props> = ({ data }) => {
       </section>
       <section className="bg-gradient-to-b from-[#686DEC] rounded-t-[80px]">
         <div className="py-16">
-          <h3 className="text-white text-4xl font-bold text-center mb-12">
+          <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-12">
             Program yang Pernah Dilakukan
           </h3>
           <div className="overflow-x-clip sm:py-16">
@@ -170,7 +170,6 @@ const About: NextPage<Props> = ({ data }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await fetchPastEvents();
-  console.log(data);
   return { props: { data: data.results } };
 };
 

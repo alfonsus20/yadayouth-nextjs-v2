@@ -25,11 +25,11 @@ const Home: NextPage<Props> = ({ data }) => {
       >
         <div className="max-w-screen-2xl px-8 xs:px-16">
           <div className="max-w-xl relative z-10 pb-12">
-            <h1 className="text-5xl font-semibold">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl font-semibold">
               PEMBERDAYAAN ANAK UNTUK MASA DEPAN
             </h1>
             <div className="bg-blue h-1 w-full my-4"></div>
-            <p className="text-lg">
+            <p className="text-md xs:text-lg">
               Kami memberikan pelayanan kepada masyarakat dimana semua
               keuntungan akan diberikan kepada anak-anak Indonesia
             </p>
@@ -44,7 +44,7 @@ const Home: NextPage<Props> = ({ data }) => {
         />
       </section>
       <section className="max-w-[1200px] mx-auto px-8 xs:px-16 py-16">
-        <h2 className="font-bold text-4xl text-center mb-16 md:mb-32">
+        <h2 className="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32">
           Dampak Kami
         </h2>
         <div className="grid grid-cols-12 gap-6 md:gap-10">
@@ -62,8 +62,8 @@ const Home: NextPage<Props> = ({ data }) => {
           placeholder="blur"
           objectPosition="bottom"
         />
-        <div className="px-8 xs:px-16 pt-32 pb-56 max-w-screen-2xl mx-auto relative z-10">
-          <h2 className="font-bold text-4xl text-center mb-32 text-white">
+        <div className="px-8 xs:px-16 pt-24 pb-52 max-w-screen-2xl mx-auto relative z-10">
+          <h2 className="font-bold text-3xl xs:text-4xl text-center mb-28 text-white">
             Layanan Kami
           </h2>
           <div className="flex flex-wrap gap-x-4 gap-y-20 justify-around">
@@ -74,7 +74,7 @@ const Home: NextPage<Props> = ({ data }) => {
         </div>
       </section>
       <section className="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20">
-        <h2 className="font-bold text-4xl text-center mb-8">Recent Post</h2>
+        <h2 className="font-bold text-3xl xs:text-4xl text-center mb-8">Recent Post</h2>
         {data && <InstagramCarousel data={data} />}
       </section>
     </div>
