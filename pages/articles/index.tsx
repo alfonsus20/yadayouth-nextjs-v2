@@ -31,7 +31,9 @@ const Articles: NextPage<Props> = ({ data }) => {
   };
 
   let filteredArticles = data.filter((article) =>
-    article.title.toLowerCase().includes((keywordParams as string) || "")
+    article.title
+      .toLowerCase()
+      .includes(((keywordParams as string) || "").toLowerCase())
   );
 
   const toggleSorting = () => {

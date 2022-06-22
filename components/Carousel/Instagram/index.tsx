@@ -41,6 +41,7 @@ const CustomDot = ({ onClick, ...rest }: DotProps) => {
 const Instagram = ({ data }: Props) => {
   return (
     <Carousel
+      ssr={true}
       responsive={responsive}
       arrows={false}
       infinite={true}
