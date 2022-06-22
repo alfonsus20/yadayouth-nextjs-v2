@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import InstagramLogo from "../../public/sosmed/instagram.svg";
+import LinkedinLogo from "../../public/sosmed/linkedin.svg";
+import TiktokLogo from "../../public/sosmed/tiktok.svg";
 
 const Footer = () => {
   return (
@@ -25,22 +28,7 @@ const Footer = () => {
                 rel="noopen noreferrer"
               >
                 <Image
-                  src="/sosmed/facebook.svg"
-                  alt="facebook"
-                  className="transition cursor-pointer scale-75 hover:scale-100"
-                  width={40}
-                  height={40}
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/yadayouth.id"
-                target="_blank"
-                rel="noopen noreferrer"
-              >
-                <Image
-                  src="/sosmed/instagram.svg"
+                  src={InstagramLogo}
                   alt="instagram"
                   className="transition cursor-pointer scale-75 hover:scale-100"
                   width={40}
@@ -49,27 +37,39 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <Image
-                src="/sosmed/twitter.svg"
-                alt="twitter"
-                className="transition cursor-pointer scale-75 hover:scale-100"
-                width={40}
-                height={40}
-              />
+              <a
+                href="https://www.tiktok.com/@yadayouth.id"
+                target="_blank"
+                rel="noopen noreferrer"
+              >
+                <Image
+                  src={TiktokLogo}
+                  alt="tiktok"
+                  className="transition cursor-pointer scale-75 hover:scale-100"
+                  width={40}
+                  height={40}
+                />
+              </a>
             </li>
             <li>
-              <Image
-                src="/sosmed/youtube.svg"
-                alt="youtube"
-                className="transition cursor-pointer scale-75 hover:scale-100"
-                width={40}
-                height={40}
-              />
+              <a
+                href="https://www.linkedin.com/company/yada-youth/"
+                target="_blank"
+                rel="noopen noreferrer"
+              >
+                <Image
+                  src={LinkedinLogo}
+                  alt="linkedin"
+                  className="transition cursor-pointer scale-75 hover:scale-100"
+                  width={40}
+                  height={40}
+                />
+              </a>
             </li>
           </ul>
           <div className="text-center sm:text-right font-semibold">
             <p>Tentang Kami</p>
-            <p>0812345678910</p>
+            <p>081230269075</p>
           </div>
         </div>
       </div>

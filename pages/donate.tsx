@@ -9,7 +9,9 @@ import { DONATION_AIMS } from "../utils/constants";
 const Donate = () => {
   return (
     <div>
-      <Head>Donasi</Head>
+      <Head>
+        <title>Donasi</title>
+      </Head>
       <section
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"
