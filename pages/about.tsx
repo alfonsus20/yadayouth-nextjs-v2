@@ -157,7 +157,7 @@ const About: NextPage<Props> = ({ data }) => {
           <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-12">
             Program yang Pernah Dilakukan
           </h3>
-          <div className="overflow-x-clip sm:py-16">
+          <div className="overflow-x-hidden sm:py-16">
             <div className="transform sm:scale-150">
               <EventCarousel data={data} />
             </div>
