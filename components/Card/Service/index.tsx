@@ -9,7 +9,7 @@ type Props = {
   title: string;
   description: string;
   buttonText: string;
-  buttonHref: string;
+  buttonHref?: string;
   isOpenNewPage?: boolean;
 };
 
@@ -51,6 +51,7 @@ const Service = ({
             ? "info"
             : "default"
         }`}
+        disabled={!buttonHref}
         onClick={() => {
           if (isOpenNewPage) {
             window.open(buttonHref);

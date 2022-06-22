@@ -71,7 +71,6 @@ export const SERVICES = [
     description:
       "Kami menyediakan webinar pengembangan diri untuk membantu mendanai layanan masyarakat",
     buttonText: "Ikut Webinar",
-    buttonHref: "https://google.com",
     image: Service3Img,
     color: "blue",
     isOpenNewPage: true,

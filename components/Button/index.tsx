@@ -28,7 +28,7 @@ const Button = ({
   return (
     <button
       className={cn(
-        "hover:opacity-90 transition-opacity disabled:opacity-75 py-2",
+        "hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2",
         {
           rounded: shape === "rounded",
           "rounded-full": shape === "pill",

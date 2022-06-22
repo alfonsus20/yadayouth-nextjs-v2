@@ -82,13 +82,13 @@ const Articles: NextPage<Props> = ({ data }) => {
               placeholder="Search"
               shape="pill"
               value={keyword}
-              icon={<SearchIcon />}
+              icon={<SearchIcon className="text-gray w-5 h-5" />}
               className="flex-auto"
             />
             <div className="relative">
               <IconButton
                 type="button"
-                icon={<SortDescendingIcon />}
+                icon={<SortDescendingIcon className="text-gray w-5 h-5" />}
                 variant="secondary"
                 shape="pill"
                 onClick={toggleSorting}

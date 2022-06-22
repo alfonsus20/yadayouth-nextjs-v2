@@ -1,8 +1,7 @@
-import React from "react";
 import cn from "classnames";
+import React from "react";
 import { CommonShape } from "../../types/theme";
 
-import styles from "./style.module.scss";
 
 type IconButtonProps = {
   variant?: "primary" | "secondary";
@@ -18,9 +17,8 @@ const IconButton = ({
 }: IconButtonProps) => {
   return (
     <button
-      className={cn(styles["icon-btn"], {
-        [styles["icon-btn-primary"]]: variant === "primary",
-        [styles["icon-btn-secondary"]]: variant === "secondary",
+      className={cn("px-4 py-2", {
+        "bg-gray-light": variant === "secondary",
         "is-box": shape === "box",
         "is-pill": shape === "pill",
         "is-rounded": shape === "rounded",
