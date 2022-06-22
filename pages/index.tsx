@@ -24,7 +24,7 @@ const Home: NextPage<Props> = ({ data }) => {
         className="relative flex items-center"
       >
         <div className="max-w-screen-2xl px-8 xs:px-16">
-          <div className="max-w-xl relative z-10 pb-12">
+          <div className="max-w-xl relative z-10 pt-8 pb-12">
             <h1 className="text-3xl xs:text-4xl sm:text-5xl font-semibold">
               PEMBERDAYAAN ANAK UNTUK MASA DEPAN
             </h1>

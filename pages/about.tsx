@@ -28,7 +28,7 @@ const About: NextPage<Props> = ({ data }) => {
         className="relative flex justify-center items-center"
       >
         <div className="max-w-screen-lg px-16 text-center text-white">
-          <div className="relative z-10 pb-8">
+          <div className="relative z-10 pt-8 pb-12">
             <h1 className="text-3xl xs text-3xl:xs:text-4xl sm:text-5xl font-bold">TENTANG KAMI</h1>
             <div className="bg-blue h-2 w-1/3 my-4 mx-auto rounded-md"></div>
             <p className="text-lg mb-4">
