@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   try {
     const { data } = await fetchArticlesById(`${articleId}`);
-    return { props: { data } };
+    return { props: { data : data.result } };
   } catch (e) {
     return { props: {}, notFound: true, revalidate: 60 * 60 * 24 };
   }

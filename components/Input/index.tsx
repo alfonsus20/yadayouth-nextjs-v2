@@ -23,6 +23,7 @@ const Input = ({
         "is-pill": shape === "pill",
         "is-rounded": shape === "rounded",
       })}
+      data-testid='input-wrapper'
     >
       <input className="flex-auto outline-none bg-transparent" {...rest} />
       {icon}

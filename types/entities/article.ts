@@ -11,4 +11,10 @@ export type Article = {
   content: string;
 };
 
-export type ArticleList = Paginated<Article> 
+export type ArticleDto = {
+  previous?: number;
+  next?: number;
+  result: Article;
+};
+
+export type ArticleList = Paginated<Article>;
