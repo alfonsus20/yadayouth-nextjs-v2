@@ -31,7 +31,7 @@ const WideArticle = ({ id, imageURL, title, preview }: Props) => {
           >
             {title}
           </p>
-          <p className="line-clamp-3 sm:line-clamp-4" data-testid="card-description">
+          <p className="line-clamp-3 sm:line-clamp-4" data-testid="card-preview">
             {preview}
           </p>
         </div>

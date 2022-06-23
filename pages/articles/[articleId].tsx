@@ -16,7 +16,7 @@ const ArticleDetail: NextPage<Props> = ({ data }) => {
         <title>{data.title}</title>
       </Head>
       <div className="mb-4">
-        <h2 className="text-gray-600 font-bold text-3xl">{data.title}</h2>
+        <h2 className="text-gray-600 font-bold text-3xl mb-2">{data.title}</h2>
         <p className="text-orange-500">
           {dayjs(data.timePublised).format("dddd, DD MMMM YYYY")}
         </p>
@@ -25,9 +25,10 @@ const ArticleDetail: NextPage<Props> = ({ data }) => {
         <Image
           src={data.articleImage}
           alt="gambar"
-          width={850}
-          height={450}
+          width={900}
+          height={480}
           objectFit="cover"
+          objectPosition='center'
         />
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.content }} />

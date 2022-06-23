@@ -20,13 +20,14 @@ const Impact = ({ image, color, title, description }: Props) => {
           "bg-neon--blue": color === "blue",
         }
       )}
+      data-testid="card"
     >
       <div className="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56">
-        <Image src={image} alt={title} width={220} height={220} quality={100} />
+        <Image src={image} alt={title} width={220} height={220} quality={100} data-testid="card-image" />
       </div>
       <div className="text-white">
-        <h3 className="font-semibold text-xl mb-1">{title}</h3>
-        <p className="text-lg">{description}</p>
+        <h3 className="font-semibold text-xl mb-1" data-testid="card-title">{title}</h3>
+        <p className="text-lg" data-testid="card-description">{description}</p>
       </div>
     </div>
   );

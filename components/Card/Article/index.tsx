@@ -30,7 +30,7 @@ const Article = ({ id, imageURL, title, preview }: ArticleProps) => {
           >
             {title}
           </p>
-          <p className="line-clamp-3" data-testid="card-description">
+          <p className="line-clamp-3" data-testid="card-preview">
             {preview}
           </p>
         </div>

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { ArticleCard } from "..";
+import WideArticle from ".";
 
 const mockedProps = {
   imageURL: "http://google.com",
@@ -8,21 +8,21 @@ const mockedProps = {
   id: 1,
 };
 
-describe("Article Card unit test", () => {
+describe("Wide article unit test", () => {
   it("should render correctly", () => {
-    render(<ArticleCard {...mockedProps} />);
+    render(<WideArticle {...mockedProps} />);
     expect(screen.getByTestId("card-image")).toBeVisible();
     expect(screen.getByTestId("card-title")).toBeVisible();
     expect(screen.getByTestId("card-preview")).toBeVisible();
 
-    expect(screen.getByTestId("card-title")).toHaveTextContent("Title test");
-    expect(screen.getByTestId("card-preview")).toHaveTextContent(
+    expect(screen.getByTestId("card-title").textContent).toEqual("Title test");
+    expect(screen.getByTestId("card-preview").textContent).toEqual(
       "Preview test"
     );
   });
 
   it("should match snapshot", () => {
-    const container = render(<ArticleCard {...mockedProps} />);
+    const container = render(<WideArticle {...mockedProps} />);
     expect(container).toMatchSnapshot();
   });
 });
