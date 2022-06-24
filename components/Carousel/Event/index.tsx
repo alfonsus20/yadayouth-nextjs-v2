@@ -38,7 +38,7 @@ const CustomDot = ({ onClick, ...rest }: DotProps) => {
   );
 };
 
-const Event = ({ data }: Props) => {
+const EventCard = ({ data }: Props) => {
   return (
     <Carousel
       ssr={true}
@@ -71,4 +71,4 @@ const Event = ({ data }: Props) => {
   );
 };
 
-export default Event;
+export default EventCard;

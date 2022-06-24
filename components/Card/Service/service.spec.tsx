@@ -44,6 +44,14 @@ describe("Service card unit test", () => {
   });
 
   it("should render correct background color and button appearance", () => {
+    const containerDefault = render(
+      <ServiceCard {...mockedProps} color=''/>
+    );
+    expect(screen.getByTestId("card-btn").className).toContain(
+      "bg-white text-gray-600"
+    );
+    containerDefault.unmount();
+
     const containerYellow = render(
       <ServiceCard {...mockedProps} color="yellow" />
     );

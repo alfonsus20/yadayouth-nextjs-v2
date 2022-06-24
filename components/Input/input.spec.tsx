@@ -26,11 +26,7 @@ describe("Input unit test", () => {
 
   it("should be able to render icon", () => {
     render(
-      <Input
-        variant="secondary"
-        {...mockedProps}
-        icon={<UserIcon className="w-5 h-5 icon" />}
-      />
+      <Input {...mockedProps} icon={<UserIcon className="w-5 h-5 icon" />} />
     );
     expect(screen.getByTestId("input-wrapper").childNodes.length).toEqual(2);
     expect(screen.getByTestId("input-wrapper").lastChild).toHaveClass(
@@ -59,7 +55,9 @@ describe("Input unit test", () => {
     const elRounded = render(
       <Input variant="secondary" shape="rounded" {...mockedProps} />
     );
-    expect(screen.getByTestId("input-wrapper").className).toContain("is-rounded");
+    expect(screen.getByTestId("input-wrapper").className).toContain(
+      "is-rounded"
+    );
     elRounded.unmount();
   });
 });
