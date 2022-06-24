@@ -5,6 +5,7 @@ module.exports = {
     "!**/node_modules/**",
     "!**/.next/**",
     "!**/models/**",
+    "!**/coverage/**",
     "!**/utils/constants.tsx",
     "!**/fileTransformer.js",
     "!**/*.config.js",

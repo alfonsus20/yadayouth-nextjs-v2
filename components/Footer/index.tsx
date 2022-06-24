@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../../public/logo.png";
 import InstagramLogo from "../../public/sosmed/instagram.svg";
 import LinkedinLogo from "../../public/sosmed/linkedin.svg";
 import TiktokLogo from "../../public/sosmed/tiktok.svg";
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className="flex items-center gap-x-2 flex-col sm:flex-row">
           <Link href="/">
             <a className="relative w-28 sm:w-20 h-28 sm:h-20">
-              <Image src="/logo.png" alt="logo" layout="fill" />
+              <Image src={Logo} alt="logo" layout="fill" />
             </a>
           </Link>
           <div className="text-center sm:text-left">
