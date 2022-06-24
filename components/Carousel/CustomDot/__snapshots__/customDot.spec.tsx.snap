@@ -5,14 +5,14 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <button
+      <li
         class="w-2 h-2 transform sm:scale-75 rounded-full mx-3 bg-gray"
         data-testid="dot"
       />
     </div>
   </body>,
   "container": <div>
-    <button
+    <li
       class="w-2 h-2 transform sm:scale-75 rounded-full mx-3 bg-gray"
       data-testid="dot"
     />

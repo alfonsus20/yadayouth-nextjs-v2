@@ -4,14 +4,14 @@ import { DotProps } from "react-multi-carousel";
 const CustomDot = ({ onClick, ...rest }: DotProps) => {
   const { active } = rest;
   return (
-    <button
+    <li
       data-testid="dot"
       className={cn("w-2 h-2 transform sm:scale-75 rounded-full mx-3", {
         "bg-blue": active,
         "bg-gray": !active,
       })}
       onClick={onClick}
-    ></button>
+    ></li>
   );
 };
 
