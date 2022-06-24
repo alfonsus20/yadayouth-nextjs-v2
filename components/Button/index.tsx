@@ -16,6 +16,8 @@ type Props = {
   appearance?: Appearance;
   size?: CommonSize;
   children: React.ReactNode;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
@@ -23,12 +25,16 @@ const Button = ({
   appearance = "primary",
   size = "md",
   children,
+  leftIcon,
+  rightIcon,
+  className,
   ...rest
 }: Props) => {
   return (
     <button
       className={cn(
-        "hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2",
+        "hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center",
+        className,
         {
           rounded: shape === "rounded",
           "rounded-full": shape === "pill",
@@ -46,7 +52,9 @@ const Button = ({
       )}
       {...rest}
     >
+      {leftIcon && <span className="mr-3">{leftIcon}</span>}
       {children}
+      {rightIcon && <span className="ml-3">{rightIcon}</span>}
     </button>
   );
 };

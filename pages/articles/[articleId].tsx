@@ -1,15 +1,26 @@
+import {
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon
+} from "@heroicons/react/outline";
+import classNames from "classnames";
 import dayjs from "dayjs";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Button from "../../components/Button";
 import { fetchArticles, fetchArticlesById } from "../../models/article";
 import { Article } from "../../types/entities/article";
 
 type Props = {
   data: Article;
+  prev?: number;
+  next?: number;
 };
 
-const ArticleDetail: NextPage<Props> = ({ data }) => {
+const ArticleDetail: NextPage<Props> = ({ data, prev, next }) => {
+  const router = useRouter();
+
   return (
     <div className="max-w-screen-xl mx-auto pt-8 px-8 lg:px-0">
       <Head>
@@ -28,10 +39,34 @@ const ArticleDetail: NextPage<Props> = ({ data }) => {
           width={900}
           height={480}
           objectFit="cover"
-          objectPosition='center'
+          objectPosition="center"
         />
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.content }} />
+      <div className={classNames("flex", { "mt-8": prev || next })}>
+        {prev && (
+          <Button
+            leftIcon={<ChevronDoubleLeftIcon className="w-5 h-5 text-white" />}
+            appearance="tertiary"
+            onClick={() => router.push(`/articles/${prev}`)}
+            className="mr-auto"
+          >
+            Prev
+          </Button>
+        )}
+        {next && (
+          <Button
+            rightIcon={
+              <ChevronDoubleRightIcon className="w-5 h-5 text-white" />
+            }
+            appearance="tertiary"
+            onClick={() => router.push(`/articles/${next}`)}
+            className="ml-auto"
+          >
+            Next
+          </Button>
+        )}
+      </div>
     </div>
   );
 };
@@ -41,7 +76,9 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   try {
     const { data } = await fetchArticlesById(`${articleId}`);
-    return { props: { data : data.result } };
+    return {
+      props: { data: data.result, prev: data.previous, next: data.next },
+    };
   } catch (e) {
     return { props: {}, notFound: true, revalidate: 60 * 60 * 24 };
   }
