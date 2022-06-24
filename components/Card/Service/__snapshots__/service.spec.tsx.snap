@@ -33,7 +33,7 @@ Object {
           Description
         </p>
         <button
-          class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 rounded-full bg-yellow-light text-white px-6  text-md"
+          class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-yellow-light text-white px-6 text-md"
           data-testid="card-btn"
           disabled=""
         >
@@ -71,7 +71,7 @@ Object {
         Description
       </p>
       <button
-        class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 rounded-full bg-yellow-light text-white px-6  text-md"
+        class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-yellow-light text-white px-6 text-md"
         data-testid="card-btn"
         disabled=""
       >

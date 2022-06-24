@@ -32,6 +32,7 @@ const Button = ({
 }: Props) => {
   return (
     <button
+      data-testid="button"
       className={cn(
         "hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center",
         className,
@@ -46,15 +47,23 @@ const Button = ({
           "bg-yellow-light text-white": appearance === "warning",
           "bg-blue opacity-90 text-white": appearance === "info",
           "px-10 text-lg": size === "lg",
-          "px-6  text-md": size === "md",
+          "px-6 text-md": size === "md",
           "px-3 text-sm": size === "sm",
         }
       )}
       {...rest}
     >
-      {leftIcon && <span className="mr-3">{leftIcon}</span>}
+      {leftIcon && (
+        <span className="mr-3" data-testid="left-icon">
+          {leftIcon}
+        </span>
+      )}
       {children}
-      {rightIcon && <span className="ml-3">{rightIcon}</span>}
+      {rightIcon && (
+        <span className="ml-3" data-testid="right-icon">
+          {rightIcon}
+        </span>
+      )}
     </button>
   );
 };
