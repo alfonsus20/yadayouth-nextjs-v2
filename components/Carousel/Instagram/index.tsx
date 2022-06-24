@@ -1,7 +1,7 @@
-import cn from "classnames";
 import Image from "next/image";
-import Carousel, { DotProps } from "react-multi-carousel";
+import Carousel from "react-multi-carousel";
 import { IGPost } from "../../../types/entities/igPost";
+import CustomDot from "../CustomDot";
 
 type Props = {
   data: IGPost[];
@@ -23,19 +23,6 @@ const responsive = {
     items: 1,
     slidesToSlide: 1,
   },
-};
-
-const CustomDot = ({ onClick, ...rest }: DotProps) => {
-  const { active } = rest;
-  return (
-    <button
-      className={cn("w-2 h-2 rounded-full mx-3", {
-        "bg-blue": active,
-        "bg-gray": !active,
-      })}
-      onClick={onClick}
-    ></button>
-  );
 };
 
 const Instagram = ({ data }: Props) => {

@@ -1,7 +1,7 @@
-import cn from "classnames";
 import Image from "next/image";
-import Carousel, { DotProps } from "react-multi-carousel";
+import Carousel from "react-multi-carousel";
 import { Event } from "../../../types/entities/event";
+import CustomDot from "../CustomDot";
 
 type Props = {
   data: Event[];
@@ -23,19 +23,6 @@ const responsive = {
     items: 1,
     slidesToSlide: 1,
   },
-};
-
-const CustomDot = ({ onClick, ...rest }: DotProps) => {
-  const { active } = rest;
-  return (
-    <button
-      className={cn("w-2 h-2 transform sm:scale-75 rounded-full mx-3", {
-        "bg-blue": active,
-        "bg-gray": !active,
-      })}
-      onClick={onClick}
-    ></button>
-  );
 };
 
 const EventCard = ({ data }: Props) => {
