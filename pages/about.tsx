@@ -38,7 +38,7 @@ const About: NextPage<Props> = ({ data }) => {
               sistemik yang menyebabkan kemiskinan.
             </p>
             <Link href="#selengkapnya" passHref>
-              <Button size="lg" shape="pill">
+              <Button size="lg" shape="pill" className="mx-auto">
                 SELENGKAPNYA
               </Button>
             </Link>
