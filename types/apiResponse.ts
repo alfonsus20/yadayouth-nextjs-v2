@@ -2,8 +2,8 @@ import { AxiosPromise } from 'axios';
 
 export type Paginated<TData> = {
   count: number;
-  next?: number;
-  previous?: number;
+  next: number | null;
+  previous: number | null;
   results: Array<TData>;
 };
 

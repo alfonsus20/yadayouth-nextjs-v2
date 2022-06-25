@@ -1,0 +1,562 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About page unit test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <section
+          class="relative flex justify-center items-center"
+          style="min-height: calc(100vh - 80px);"
+        >
+          <div
+            class="max-w-screen-lg px-16 text-center text-white min-h-[600px] flex items-center"
+          >
+            <div
+              class="relative z-10 pt-8 pb-20"
+            >
+              <h1
+                class="text-3xl xxs:text-4xl sm:text-5xl font-bold"
+              >
+                TENTANG KAMI
+              </h1>
+              <div
+                class="bg-blue h-2 w-1/3 my-4 mx-auto rounded-md"
+              />
+              <p
+                class="text-lg mb-4"
+              >
+                Yada Youth adalah organisasi nirlaba yang bertujuan untuk fokus pada pemberdayaan anak-anak dan remaja Indonesia yang hidup dalam kemiskinan melalui upaya kolektif untuk meminimalkan faktor sistemik yang menyebabkan kemiskinan.
+              </p>
+              <button
+                class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center mx-auto rounded-full bg-blue text-white px-10 text-lg"
+                data-testid="button"
+                href="/#selengkapnya"
+              >
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+          <img
+            alt="image"
+            layout="fill"
+            objectfit="cover"
+            objectposition="top"
+            placeholder="blur"
+            src="about.jpg"
+          />
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 bg-neutral-900 opacity-50"
+          />
+        </section>
+        <section
+          class="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10"
+          id="selengkapnya"
+        >
+          <div
+            class="text-center space-y-8"
+          >
+            <div>
+              <h3
+                class="text-gray-600 font-bold text-3xl mb-2"
+                data-testid="card-title"
+              >
+                VISI KAMI
+              </h3>
+              <div
+                class="h-1 bg-gray-600 w-1/5 mx-auto"
+              />
+            </div>
+            <div>
+              <img
+                alt="image"
+                class="rounded-xl"
+                data-testid="card-image"
+                placeholder="blur"
+                src="vision.jpg"
+              />
+            </div>
+            <p
+              data-testid="card-description"
+            >
+              Membangun masyarakat yang cocok untuk masa depan umat manusia, di mana anak-anak, remaja, dan pemuda diberi makan dengan baik, berpendidikan baik, sehat, setara, dilindungi, dan dirawat.
+            </p>
+          </div>
+          <div
+            class="text-center space-y-8"
+          >
+            <div>
+              <h3
+                class="text-gray-600 font-bold text-3xl mb-2"
+                data-testid="card-title"
+              >
+                MISI KAMI
+              </h3>
+              <div
+                class="h-1 bg-gray-600 w-1/5 mx-auto"
+              />
+            </div>
+            <div>
+              <img
+                alt="image"
+                class="rounded-xl"
+                data-testid="card-image"
+                placeholder="blur"
+                src="mission.jpg"
+              />
+            </div>
+            <p
+              data-testid="card-description"
+            >
+              Terus meningkatkan standar hidup anak-anak, remaja, dan remaja untuk membantu mereka hidup lebih bahagia, memberdayakan mereka untuk mencapai lebih banyak, dan berkontribusi lebih banyak kepada masyarakat
+            </p>
+          </div>
+        </section>
+        <section
+          class="bg-gradient-to-b from-[#E5AB1A] rounded-t-[80px]"
+        >
+          <div
+            class="max-w-screen-lg mx-auto px-8 xs:px-16 py-16"
+          >
+            <h3
+              class="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28"
+            >
+              Behind Yada Youth
+            </h3>
+            <div
+              class="relative"
+            >
+              <div
+                class="absolute top-1/2 transform -translate-y-1/2 right-0 w-20 h-[75%] hidden lg:flex flex-col justify-between items-center"
+              >
+                <div
+                  class="bg-orange h-12 w-12 rounded-full"
+                />
+                <div
+                  class="bg-orange h-12 w-12 rounded-full mb-28"
+                />
+                <div
+                  class="bg-orange h-12 w-12 rounded-full"
+                />
+                <div
+                  class="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"
+                />
+              </div>
+              <div
+                class="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-8 xs:mb-20"
+              >
+                <div
+                  class="rounded-full border-4 border-white w-64 h-64 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto"
+                >
+                  <img
+                    alt="image"
+                    height="400"
+                    placeholder="blur"
+                    src="hanif.png"
+                    width="400"
+                  />
+                </div>
+                <h2
+                  class="font-bold text-3xl xs:text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32"
+                >
+                  Hanif
+                </h2>
+                <p
+                  class="text-justify"
+                >
+                  Hanif adalah pendiri dan direktur Yada Youth Indonesia. Melalui kehidupan kampusnya, dia memiliki latar belakang akademis yang kuat dan sering terlibat dalam kegiatan ekstrakurikuler. Yang membuatnya mendapat predikat Mahasiswa Berprestasi Ketiga di universitasnya, Institut Teknologi Sepuluh Nopember (ITS). Selain itu, ia juga sangat bersemangat dalam berwirausaha, yang membawanya untuk ikut mendirikan PT. Grup Milenial Global. Hanif memiliki komitmen jangka panjang untuk mengatasi kemiskinan, melihat sebagian besar karya ilmiah dan inovasinya berfokus pada penyelesaian masalah keuangan, ekonomi, dan sosial di pedesaan. Kini, didorong oleh mimpi masa kecilnya, ia bertekad untuk memberdayakan anak-anak miskin di seluruh Indonesia melalui Yada Youth Indonesia.
+                </p>
+              </div>
+              <div
+                class="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-36"
+              >
+                <div
+                  class="rounded-full overflow-hidden w-64 h-64 md:w-56 md:h-56 md:flex-shrink-0 flex justify-center"
+                >
+                  <img
+                    alt="image"
+                    height="400"
+                    placeholder="blur"
+                    src="logo.png"
+                    width="400"
+                  />
+                </div>
+                <div>
+                  <h2
+                    class="font-bold text-3xl xs:text-4xl mb-4"
+                  >
+                    YadaYouth.id
+                  </h2>
+                  <p
+                    class="text-justify"
+                  >
+                    19 Februari 2021 YadaYouth.id di bangun oleh dua anak muda yaitu Hanif dan Stephani.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto"
+              >
+                <div
+                  class="rounded-full border-4 border-white w-64 h-64 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto"
+                >
+                  <img
+                    alt="image"
+                    height="250"
+                    placeholder="blur"
+                    src="stephani.png"
+                    width="250"
+                  />
+                </div>
+                <h2
+                  class="font-bold text-3xl xs:text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32"
+                >
+                  Stephani
+                </h2>
+                <p
+                  class="text-justify"
+                >
+                  Stephani adalah wakil direktur Yada Youth Indonesia yang saat ini menjadi mahasiswa di Universitas Gadjah Mada. Sepanjang sekolah menengah, ia dikenal sebagai siswa aktif dengan prestasi akademik yang baik, lulus dengan IPK 3,8 dari 4,0. Dia sangat tergila-gila dengan konektivitas manusia dalam organisasi sosial. Upaya Stephani dalam advokasi untuk Anak dimulai pada tahun 2019 ketika ia menjabat sebagai penggalangan dana di UNICEF Indonesia untuk kampanye penyediaan sanitasi dan pendidikan untuk Anak Papua. Ia kemudian melanjutkan perannya sebagai relawan pembangunan di Panti Asuhan Karunia, sebuah panti asuhan yang dibangun khusus untuk Yatim Papua di Surabaya. Stephani berjuang untuk keyakinan bahwa anak-anak tanpa memandang latar belakang harus diberikan kesempatan yang sama seperti mereka yang lahir dalam situasi yang lebih istimewa dan saat ini berjuang untuk tujuan melalui Yada Youth Indonesia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-gradient-to-b from-[#686DEC] rounded-t-[80px]"
+        >
+          <div
+            class="py-16"
+          >
+            <h3
+              class="text-white text-3xl xs:text-4xl font-bold text-center mb-12"
+            >
+              Program yang Pernah Dilakukan
+            </h3>
+            <div
+              class="overflow-x-hidden sm:py-16"
+            >
+              <div
+                class="transform sm:scale-150"
+              >
+                <div
+                  class="react-multi-carousel-list  "
+                  dir="ltr"
+                >
+                  <ul
+                    class="react-multi-carousel-track "
+                    style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <section
+        class="relative flex justify-center items-center"
+        style="min-height: calc(100vh - 80px);"
+      >
+        <div
+          class="max-w-screen-lg px-16 text-center text-white min-h-[600px] flex items-center"
+        >
+          <div
+            class="relative z-10 pt-8 pb-20"
+          >
+            <h1
+              class="text-3xl xxs:text-4xl sm:text-5xl font-bold"
+            >
+              TENTANG KAMI
+            </h1>
+            <div
+              class="bg-blue h-2 w-1/3 my-4 mx-auto rounded-md"
+            />
+            <p
+              class="text-lg mb-4"
+            >
+              Yada Youth adalah organisasi nirlaba yang bertujuan untuk fokus pada pemberdayaan anak-anak dan remaja Indonesia yang hidup dalam kemiskinan melalui upaya kolektif untuk meminimalkan faktor sistemik yang menyebabkan kemiskinan.
+            </p>
+            <button
+              class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center mx-auto rounded-full bg-blue text-white px-10 text-lg"
+              data-testid="button"
+              href="/#selengkapnya"
+            >
+              SELENGKAPNYA
+            </button>
+          </div>
+        </div>
+        <img
+          alt="image"
+          layout="fill"
+          objectfit="cover"
+          objectposition="top"
+          placeholder="blur"
+          src="about.jpg"
+        />
+        <div
+          class="absolute top-0 left-0 bottom-0 right-0 bg-neutral-900 opacity-50"
+        />
+      </section>
+      <section
+        class="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10"
+        id="selengkapnya"
+      >
+        <div
+          class="text-center space-y-8"
+        >
+          <div>
+            <h3
+              class="text-gray-600 font-bold text-3xl mb-2"
+              data-testid="card-title"
+            >
+              VISI KAMI
+            </h3>
+            <div
+              class="h-1 bg-gray-600 w-1/5 mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              alt="image"
+              class="rounded-xl"
+              data-testid="card-image"
+              placeholder="blur"
+              src="vision.jpg"
+            />
+          </div>
+          <p
+            data-testid="card-description"
+          >
+            Membangun masyarakat yang cocok untuk masa depan umat manusia, di mana anak-anak, remaja, dan pemuda diberi makan dengan baik, berpendidikan baik, sehat, setara, dilindungi, dan dirawat.
+          </p>
+        </div>
+        <div
+          class="text-center space-y-8"
+        >
+          <div>
+            <h3
+              class="text-gray-600 font-bold text-3xl mb-2"
+              data-testid="card-title"
+            >
+              MISI KAMI
+            </h3>
+            <div
+              class="h-1 bg-gray-600 w-1/5 mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              alt="image"
+              class="rounded-xl"
+              data-testid="card-image"
+              placeholder="blur"
+              src="mission.jpg"
+            />
+          </div>
+          <p
+            data-testid="card-description"
+          >
+            Terus meningkatkan standar hidup anak-anak, remaja, dan remaja untuk membantu mereka hidup lebih bahagia, memberdayakan mereka untuk mencapai lebih banyak, dan berkontribusi lebih banyak kepada masyarakat
+          </p>
+        </div>
+      </section>
+      <section
+        class="bg-gradient-to-b from-[#E5AB1A] rounded-t-[80px]"
+      >
+        <div
+          class="max-w-screen-lg mx-auto px-8 xs:px-16 py-16"
+        >
+          <h3
+            class="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28"
+          >
+            Behind Yada Youth
+          </h3>
+          <div
+            class="relative"
+          >
+            <div
+              class="absolute top-1/2 transform -translate-y-1/2 right-0 w-20 h-[75%] hidden lg:flex flex-col justify-between items-center"
+            >
+              <div
+                class="bg-orange h-12 w-12 rounded-full"
+              />
+              <div
+                class="bg-orange h-12 w-12 rounded-full mb-28"
+              />
+              <div
+                class="bg-orange h-12 w-12 rounded-full"
+              />
+              <div
+                class="w-4 absolute bg-orange left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 h-[98%]"
+              />
+            </div>
+            <div
+              class="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto mb-8 xs:mb-20"
+            >
+              <div
+                class="rounded-full border-4 border-white w-64 h-64 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto"
+              >
+                <img
+                  alt="image"
+                  height="400"
+                  placeholder="blur"
+                  src="hanif.png"
+                  width="400"
+                />
+              </div>
+              <h2
+                class="font-bold text-3xl xs:text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32"
+              >
+                Hanif
+              </h2>
+              <p
+                class="text-justify"
+              >
+                Hanif adalah pendiri dan direktur Yada Youth Indonesia. Melalui kehidupan kampusnya, dia memiliki latar belakang akademis yang kuat dan sering terlibat dalam kegiatan ekstrakurikuler. Yang membuatnya mendapat predikat Mahasiswa Berprestasi Ketiga di universitasnya, Institut Teknologi Sepuluh Nopember (ITS). Selain itu, ia juga sangat bersemangat dalam berwirausaha, yang membawanya untuk ikut mendirikan PT. Grup Milenial Global. Hanif memiliki komitmen jangka panjang untuk mengatasi kemiskinan, melihat sebagian besar karya ilmiah dan inovasinya berfokus pada penyelesaian masalah keuangan, ekonomi, dan sosial di pedesaan. Kini, didorong oleh mimpi masa kecilnya, ia bertekad untuk memberdayakan anak-anak miskin di seluruh Indonesia melalui Yada Youth Indonesia.
+              </p>
+            </div>
+            <div
+              class="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12 xs:mb-36"
+            >
+              <div
+                class="rounded-full overflow-hidden w-64 h-64 md:w-56 md:h-56 md:flex-shrink-0 flex justify-center"
+              >
+                <img
+                  alt="image"
+                  height="400"
+                  placeholder="blur"
+                  src="logo.png"
+                  width="400"
+                />
+              </div>
+              <div>
+                <h2
+                  class="font-bold text-3xl xs:text-4xl mb-4"
+                >
+                  YadaYouth.id
+                </h2>
+                <p
+                  class="text-justify"
+                >
+                  19 Februari 2021 YadaYouth.id di bangun oleh dua anak muda yaitu Hanif dan Stephani.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#686DEC] text-white p-8 rounded-2xl relative max-w-2xl mx-auto"
+            >
+              <div
+                class="rounded-full border-4 border-white w-64 h-64 xs:w-48 xs:h-48 overflow-hidden xs:absolute xs:-top-20 xs:-left-12 mx-auto"
+              >
+                <img
+                  alt="image"
+                  height="250"
+                  placeholder="blur"
+                  src="stephani.png"
+                  width="250"
+                />
+              </div>
+              <h2
+                class="font-bold text-3xl xs:text-4xl my-4 xs:mt-6 xs:mb-8 xs:ml-32"
+              >
+                Stephani
+              </h2>
+              <p
+                class="text-justify"
+              >
+                Stephani adalah wakil direktur Yada Youth Indonesia yang saat ini menjadi mahasiswa di Universitas Gadjah Mada. Sepanjang sekolah menengah, ia dikenal sebagai siswa aktif dengan prestasi akademik yang baik, lulus dengan IPK 3,8 dari 4,0. Dia sangat tergila-gila dengan konektivitas manusia dalam organisasi sosial. Upaya Stephani dalam advokasi untuk Anak dimulai pada tahun 2019 ketika ia menjabat sebagai penggalangan dana di UNICEF Indonesia untuk kampanye penyediaan sanitasi dan pendidikan untuk Anak Papua. Ia kemudian melanjutkan perannya sebagai relawan pembangunan di Panti Asuhan Karunia, sebuah panti asuhan yang dibangun khusus untuk Yatim Papua di Surabaya. Stephani berjuang untuk keyakinan bahwa anak-anak tanpa memandang latar belakang harus diberikan kesempatan yang sama seperti mereka yang lahir dalam situasi yang lebih istimewa dan saat ini berjuang untuk tujuan melalui Yada Youth Indonesia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-gradient-to-b from-[#686DEC] rounded-t-[80px]"
+      >
+        <div
+          class="py-16"
+        >
+          <h3
+            class="text-white text-3xl xs:text-4xl font-bold text-center mb-12"
+          >
+            Program yang Pernah Dilakukan
+          </h3>
+          <div
+            class="overflow-x-hidden sm:py-16"
+          >
+            <div
+              class="transform sm:scale-150"
+            >
+              <div
+                class="react-multi-carousel-list  "
+                dir="ltr"
+              >
+                <ul
+                  class="react-multi-carousel-track "
+                  style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
