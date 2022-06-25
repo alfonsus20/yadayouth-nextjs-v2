@@ -1,4 +1,4 @@
-import ArticleDetail, { getStaticPaths, getStaticProps } from './[articleId]';
+import ArticleDetail, { getStaticPaths, getStaticProps } from './[articleId].page';
 import * as svc from '../../models/article';
 import articleList from '../../__mocks__/articleList.json';
 import articleSingle from '../../__mocks__/articleSingle.json';

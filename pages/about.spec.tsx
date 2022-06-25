@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import * as svc from '../models/event';
 import pastEvents from '../__mocks__/pastEvents.json';
-import About, { getStaticProps } from './about';
+import About, { getStaticProps } from './about.page';
 
 jest.mock('next/image', () => ({
   __esModule: true,

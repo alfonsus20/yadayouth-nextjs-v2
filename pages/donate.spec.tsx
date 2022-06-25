@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Donate from './donate';
+import Donate from './donate.page';
 
 jest.mock('next/image', () => ({
   __esModule: true,

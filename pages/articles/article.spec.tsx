@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import Articles, { getStaticProps } from '.';
+import Articles, { getStaticProps } from './index.page';
 import * as svc from '../../models/article';
 import articleList from '../../__mocks__/articleList.json';
 import mockRouter from 'next-router-mock';

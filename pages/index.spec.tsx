@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Home, { getStaticProps } from '.';
+import Home, { getStaticProps } from './index.page';
 import * as svc from '../models/igPost';
 import igPosts from '../__mocks__/igPosts.json';
 
