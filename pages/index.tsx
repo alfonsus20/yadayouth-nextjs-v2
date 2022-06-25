@@ -1,16 +1,16 @@
-import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { ImpactCard, ServiceCard } from "../components/Card";
-import { InstagramCarousel } from "../components/Carousel";
-import { fetchIGPosts } from "../models/igPost";
-import HomeBg from "../public/bg/home.jpg";
-import ServiceBg from "../public/bg/service.jpg";
-import { IGPost } from "../types/entities/igPost";
-import { IMPACTS, SERVICES } from "../utils/constants";
+import type { GetStaticProps, NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import { ImpactCard, ServiceCard } from '../components/Card';
+import { InstagramCarousel } from '../components/Carousel';
+import { fetchIGPosts } from '../models/igPost';
+import HomeBg from '../public/bg/home.jpg';
+import ServiceBg from '../public/bg/service.jpg';
+import { IGPost } from '../types/entities/igPost';
+import { IMPACTS, SERVICES } from '../utils/constants';
 
 type Props = {
-  data?: IGPost[];
+  data: IGPost[];
 };
 
 const Home: NextPage<Props> = ({ data }) => {
@@ -20,7 +20,7 @@ const Home: NextPage<Props> = ({ data }) => {
         <title>Yada Youth</title>
       </Head>
       <section
-        style={{ minHeight: "calc(100vh - 80px)" }}
+        style={{ minHeight: 'calc(100vh - 80px)' }}
         className="relative flex items-center"
       >
         <div className="max-w-screen-2xl px-8 xs:px-16 min-h-[600px] flex items-center">
@@ -74,8 +74,10 @@ const Home: NextPage<Props> = ({ data }) => {
         </div>
       </section>
       <section className="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20">
-        <h2 className="font-bold text-3xl xs:text-4xl text-center mb-8">Recent Post</h2>
-        {data && <InstagramCarousel data={data} />}
+        <h2 className="font-bold text-3xl xs:text-4xl text-center mb-8">
+          Recent Post
+        </h2>
+        <InstagramCarousel data={data} />
       </section>
     </div>
   );
