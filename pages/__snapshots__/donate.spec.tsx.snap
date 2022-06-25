@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Donate page unit test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <section
+          class="relative flex items-center"
+          style="min-height: calc(100vh - 80px);"
+        >
+          <div
+            class="max-w-screen-2xl px-8 py-16 xs:px-16 min-h-[600px] flex items-center"
+          >
+            <div
+              class="max-w-3xl relative z-10 pt-8 pb-20"
+            >
+              <h1
+                class="text-3xl xxs:text-4xl sm:text-5xl font-semibold leading-normal xxs:leading-normal xs:leading-normal sm:leading-normal"
+              >
+                Melalui donasi yang baik, Anda dapat memberikan dampak positif bagi pemberdayaan anak-anak di Indonesia!
+              </h1>
+            </div>
+          </div>
+          <img
+            alt="image"
+            layout="fill"
+            objectfit="cover"
+            placeholder="blur"
+            src="home.jpg"
+          />
+        </section>
+        <section
+          class="max-w-screen-xl mx-auto px-8 py-16 xs:px-16"
+        >
+          <h2
+            class="font-bold text-center text-3xl xs:text-4xl mb-12"
+          >
+            Seluruh dana akan digunakan untuk
+             
+          </h2>
+          <div
+            class="grid sm:grid-cols-2 gap-8"
+          >
+            <p
+              class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--orange"
+              data-testid="card-content"
+            >
+              Bantu salurkan suplai makanan bernutrisi kepada anak-anak dengan gizi buruk untuk mendukung pemulihan mereka
+            </p>
+            <p
+              class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--blue"
+              data-testid="card-content"
+            >
+              Membantu keluarga yang hidup dalam kemiskinan dalam bentuk tunjangan untuk mendukung dan meningkatkan taraf hidup mereka
+            </p>
+            <p
+              class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--yellow"
+              data-testid="card-content"
+            >
+              Memberikan akses layanan pendidikan bagi keluarga terkait stunting anak untuk meminimalkan pertumbuhan stunting di Indonesia
+            </p>
+            <p
+              class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--green"
+              data-testid="card-content"
+            >
+              Mendukung pembangunan infrastruktur sanitasi dan pendidikan yang layak di pedesaan dan pedesaan
+            </p>
+          </div>
+        </section>
+        <section
+          class="max-w-screen-xl mx-auto px-8 py-16 xs:px-16"
+        >
+          <h2
+            class="font-bold text-center text-3xl xs:text-4xl mb-12"
+          >
+            Bagaimana Cara Donasi ?
+          </h2>
+          <div
+            class="flex flex-col sm:flex-row items-center gap-12 text-lg"
+          >
+            <div
+              class="space-y-4"
+            >
+              <div
+                class="flex gap-x-6"
+              >
+                <div
+                  class="flex-none w-32"
+                >
+                  <img
+                    alt="image"
+                    src="mandiri.svg"
+                  />
+                </div>
+                <div>
+                  <p
+                    class="font-bold"
+                  >
+                    1330016450835
+                  </p>
+                  <p>
+                    a/n indira.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-x-6"
+              >
+                <div
+                  class="flex-none w-32"
+                >
+                  <img
+                    alt="image"
+                    src="gopay.svg"
+                  />
+                </div>
+                <div>
+                  <p
+                    class="font-bold"
+                  >
+                    081230269075
+                  </p>
+                  <p>
+                    a/n indira.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p
+              class="text-justify"
+            >
+              Harap tambahkan Rp1 ke donasi (Misalnya: untuk donasi 50k, buatlah menjadi Rp50.001 dan/atau tambahkan deskripsi “sumbangan pemuda yada” di deskripsi/catatan untuk membantu kami menghitung dana yang terkumpul secara akurat)
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <section
+        class="relative flex items-center"
+        style="min-height: calc(100vh - 80px);"
+      >
+        <div
+          class="max-w-screen-2xl px-8 py-16 xs:px-16 min-h-[600px] flex items-center"
+        >
+          <div
+            class="max-w-3xl relative z-10 pt-8 pb-20"
+          >
+            <h1
+              class="text-3xl xxs:text-4xl sm:text-5xl font-semibold leading-normal xxs:leading-normal xs:leading-normal sm:leading-normal"
+            >
+              Melalui donasi yang baik, Anda dapat memberikan dampak positif bagi pemberdayaan anak-anak di Indonesia!
+            </h1>
+          </div>
+        </div>
+        <img
+          alt="image"
+          layout="fill"
+          objectfit="cover"
+          placeholder="blur"
+          src="home.jpg"
+        />
+      </section>
+      <section
+        class="max-w-screen-xl mx-auto px-8 py-16 xs:px-16"
+      >
+        <h2
+          class="font-bold text-center text-3xl xs:text-4xl mb-12"
+        >
+          Seluruh dana akan digunakan untuk
+           
+        </h2>
+        <div
+          class="grid sm:grid-cols-2 gap-8"
+        >
+          <p
+            class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--orange"
+            data-testid="card-content"
+          >
+            Bantu salurkan suplai makanan bernutrisi kepada anak-anak dengan gizi buruk untuk mendukung pemulihan mereka
+          </p>
+          <p
+            class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--blue"
+            data-testid="card-content"
+          >
+            Membantu keluarga yang hidup dalam kemiskinan dalam bentuk tunjangan untuk mendukung dan meningkatkan taraf hidup mereka
+          </p>
+          <p
+            class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--yellow"
+            data-testid="card-content"
+          >
+            Memberikan akses layanan pendidikan bagi keluarga terkait stunting anak untuk meminimalkan pertumbuhan stunting di Indonesia
+          </p>
+          <p
+            class="col-span-1 rounded-xl p-8 relative shadow-lg text-white bg-neon--green"
+            data-testid="card-content"
+          >
+            Mendukung pembangunan infrastruktur sanitasi dan pendidikan yang layak di pedesaan dan pedesaan
+          </p>
+        </div>
+      </section>
+      <section
+        class="max-w-screen-xl mx-auto px-8 py-16 xs:px-16"
+      >
+        <h2
+          class="font-bold text-center text-3xl xs:text-4xl mb-12"
+        >
+          Bagaimana Cara Donasi ?
+        </h2>
+        <div
+          class="flex flex-col sm:flex-row items-center gap-12 text-lg"
+        >
+          <div
+            class="space-y-4"
+          >
+            <div
+              class="flex gap-x-6"
+            >
+              <div
+                class="flex-none w-32"
+              >
+                <img
+                  alt="image"
+                  src="mandiri.svg"
+                />
+              </div>
+              <div>
+                <p
+                  class="font-bold"
+                >
+                  1330016450835
+                </p>
+                <p>
+                  a/n indira.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-x-6"
+            >
+              <div
+                class="flex-none w-32"
+              >
+                <img
+                  alt="image"
+                  src="gopay.svg"
+                />
+              </div>
+              <div>
+                <p
+                  class="font-bold"
+                >
+                  081230269075
+                </p>
+                <p>
+                  a/n indira.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-justify"
+          >
+            Harap tambahkan Rp1 ke donasi (Misalnya: untuk donasi 50k, buatlah menjadi Rp50.001 dan/atau tambahkan deskripsi “sumbangan pemuda yada” di deskripsi/catatan untuk membantu kami menghitung dana yang terkumpul secara akurat)
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
