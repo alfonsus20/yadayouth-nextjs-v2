@@ -1,0 +1,37 @@
+{
+    "count": 5,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "title": "Yada Talks 1.0",
+            "date": "2021-05-04T17:14:21Z",
+            "text": "Yada Talks is an online mini webinar that aims to educate about and develop the awareness of sustainable development. Yada Talks 1.0 focuses on the topic of self-development and social movements, with Yosephine Devina Wijaya (Key Account Manager at P&G, Top 6 HSBC/HKU Asia Pacific Business Case Competition, Hong Kong) and Yacinta Shafira Pradana (Founder and President of Women Beyond Indonesia, YLI Wave 12) as the speakers.",
+            "image": "https://zcspsixwoefhuabatnmr.supabase.co/storage/v1/object/public/images-past-event/event-2.png"
+        },
+        {
+            "title": "Yada Talks 2.0",
+            "date": "2021-06-19T18:28:45Z",
+            "text": "Yada Talks is an online mini webinar that aims to educate participants on the understanding of sustainable development for young people and further develop their awareness to do so. The topic that Yada Talks 2.0 touched down on was the influence of communication on business growth, with Renata Suyono (Head of Corporate Communication at Decathlon Indonesia) as the speaker.",
+            "image": "https://zcspsixwoefhuabatnmr.supabase.co/storage/v1/object/public/images-past-event/event-3.png"
+        },
+        {
+            "title": "Yada Youth Teaching Program",
+            "date": "2021-04-24T18:29:34Z",
+            "text": "Yada Youth went to Panti Yatim Indonesia for our teaching program that was done on the basis of providing education to children which is our key goal: children empowerment. We taught the children some fun English supplies and got the chance to have personal talks with them. Everyone was more eager to learn and ask!",
+            "image": "https://zcspsixwoefhuabatnmr.supabase.co/storage/v1/object/public/images-past-event/event-4.jpg"
+        },
+        {
+            "title": "Yada Talks 3.0",
+            "date": "2021-09-19T18:30:11Z",
+            "text": "Yada Talks is an online mini webinar that aims to educate about and develop the awareness of sustainable development. Yada Talks 3.0 focuses on the topic of exploring the life and opportunities in campus, with Madeline Agita (Chairwoman IEEE ITB and Operations at Shopee Apprentice Program), Christopher Christian (Head of Kajian Strategis at BEM UI and Medical Executive at Halodoc) and Annisa Apriliani (Vice President at Generasi Baru Indonesia Sulawesi Selatan and awardee of Young leaders for Indonesia National Wave 13 by Mckinsey) as the speakers.",
+            "image": "https://zcspsixwoefhuabatnmr.supabase.co/storage/v1/object/public/images-past-event/event-5.png"
+        },
+        {
+            "title": "Money Talk",
+            "date": "2021-09-25T18:30:42Z",
+            "text": "Yada Youth’s Empowerment Division held a financial literacy workshop in Central Jakarta, precisely at Balai Warga RW 5, Karet Tengsin. The main goal of this workshop is to broaden the participant’s perspective in managing their financial choices, as well as gaining more insight which focuses on discovering more deeply about money management.",
+            "image": "https://zcspsixwoefhuabatnmr.supabase.co/storage/v1/object/public/images-past-event/event-6.jpg"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "react-multi-carousel/lib/styles.css";
+
+html {
+  scroll-padding: 80px;
+
+  @media screen and (max-width: 1280px) {
+    font-size: 90%;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 85%;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 80%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.is-box {
+  @apply rounded-none;
+}
+
+.is-rounded {
+  @apply rounded-md;
+}
+
+.is-pill {
+  @apply rounded-full;
+}
+
+.bg-neon {
+  &--yellow {
+    @apply bg-yellow-light shadow-yellow/50;
+  }
+
+  &--blue {
+    @apply bg-blue shadow-blue/50;
+  }
+
+  &--green {
+    @apply bg-green shadow-green/50;
+  }
+
+  &--orange {
+    @apply bg-orange shadow-orange/50;
+  }
+}

@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer unit test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="px-8 max-w-screen-xl mx-auto w-full"
+        id="contact"
+      >
+        <div
+          class="flex justify-between items-center py-8 flex-col sm:flex-row gap-2"
+        >
+          <div
+            class="flex items-center gap-x-2 flex-col sm:flex-row"
+          >
+            <a
+              class="relative w-28 sm:w-20 h-28 sm:h-20"
+              href="/"
+            >
+              <img
+                alt="image"
+                layout="fill"
+                src="logo.png"
+              />
+            </a>
+            <div
+              class="text-center sm:text-left"
+            >
+              <p
+                class="font-semibold text-2xl"
+              >
+                Yada Youth Indonesia
+              </p>
+              <p>
+                Empowering Children of Tomorrow
+              </p>
+            </div>
+          </div>
+          <div>
+            <ul
+              class="flex gap-x-4"
+            >
+              <li>
+                <a
+                  href="https://www.instagram.com/yadayouth.id"
+                  rel="noopen noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="image"
+                    class="transition cursor-pointer scale-75 hover:scale-100"
+                    height="40"
+                    src="instagram.svg"
+                    width="40"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@yadayouth.id"
+                  rel="noopen noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="image"
+                    class="transition cursor-pointer scale-75 hover:scale-100"
+                    height="40"
+                    src="tiktok.svg"
+                    width="40"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/yada-youth/"
+                  rel="noopen noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="image"
+                    class="transition cursor-pointer scale-75 hover:scale-100"
+                    height="40"
+                    src="linkedin.svg"
+                    width="40"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div
+              class="text-center sm:text-right font-semibold"
+            >
+              <p>
+                Tentang Kami
+              </p>
+              <p>
+                081230269075
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="text-center sm:pt-4 pb-10 font-semibold"
+        >
+          © Copyright 2022
+        </footer>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="px-8 max-w-screen-xl mx-auto w-full"
+      id="contact"
+    >
+      <div
+        class="flex justify-between items-center py-8 flex-col sm:flex-row gap-2"
+      >
+        <div
+          class="flex items-center gap-x-2 flex-col sm:flex-row"
+        >
+          <a
+            class="relative w-28 sm:w-20 h-28 sm:h-20"
+            href="/"
+          >
+            <img
+              alt="image"
+              layout="fill"
+              src="logo.png"
+            />
+          </a>
+          <div
+            class="text-center sm:text-left"
+          >
+            <p
+              class="font-semibold text-2xl"
+            >
+              Yada Youth Indonesia
+            </p>
+            <p>
+              Empowering Children of Tomorrow
+            </p>
+          </div>
+        </div>
+        <div>
+          <ul
+            class="flex gap-x-4"
+          >
+            <li>
+              <a
+                href="https://www.instagram.com/yadayouth.id"
+                rel="noopen noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="image"
+                  class="transition cursor-pointer scale-75 hover:scale-100"
+                  height="40"
+                  src="instagram.svg"
+                  width="40"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@yadayouth.id"
+                rel="noopen noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="image"
+                  class="transition cursor-pointer scale-75 hover:scale-100"
+                  height="40"
+                  src="tiktok.svg"
+                  width="40"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/yada-youth/"
+                rel="noopen noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="image"
+                  class="transition cursor-pointer scale-75 hover:scale-100"
+                  height="40"
+                  src="linkedin.svg"
+                  width="40"
+                />
+              </a>
+            </li>
+          </ul>
+          <div
+            class="text-center sm:text-right font-semibold"
+          >
+            <p>
+              Tentang Kami
+            </p>
+            <p>
+              081230269075
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="text-center sm:pt-4 pb-10 font-semibold"
+      >
+        © Copyright 2022
+      </footer>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

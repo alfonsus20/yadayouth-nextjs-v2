@@ -1,0 +1,650 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article list page unit test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="max-w-screen-xl mx-auto px-8"
+      >
+        <section
+          class="pt-6 pb-4 sm:pb-12 flex flex-col"
+        >
+          <div
+            class="flex justify-between sm:items-center mb-4 flex-col sm:flex-row gap-y-4"
+          >
+            <h2
+              class="font-bold text-3xl text-black-light"
+            >
+              Artikel Baru
+            </h2>
+            <form
+              class="flex gap-2 items-center justify-center flex-wrap"
+              data-testid="search-form"
+            >
+              <div
+                class="flex-auto flex gap-x-1 px-3 sm:px-6 py-2 items-center bg-gray-light placeholder:text-gray is-pill"
+                data-testid="input-wrapper"
+              >
+                <input
+                  class="flex-auto outline-none bg-transparent"
+                  data-testid="search-input"
+                  placeholder="Search"
+                  value=""
+                />
+                <svg
+                  aria-hidden="true"
+                  class="text-gray w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="relative"
+              >
+                <button
+                  class="px-4 py-2 bg-gray-light is-pill"
+                  data-testid="btn-toggle-sorting"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="text-gray w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="absolute top-full bg-white overflow-y-hidden transition-all flex flex-col items-center rounded-md z-20 max-h-0"
+                >
+                  <button
+                    class="flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100"
+                    data-testid="btn-asc"
+                    hidden=""
+                    type="button"
+                  >
+                    A 
+                    <svg
+                      aria-hidden="true"
+                      class="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                     Z
+                  </button>
+                  <button
+                    class="flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100"
+                    data-testid="btn-desc"
+                    hidden=""
+                    type="button"
+                  >
+                    Z 
+                    <svg
+                      aria-hidden="true"
+                      class="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                     A
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div
+          data-testid="main-section"
+        >
+          <div
+            class="mx-auto hidden sm:block pb-12"
+          >
+            <div
+              class="mb-4 relative mx-auto"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271200%27%20height=%27600%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="YADA IMPACT 3.0: Digital Era Empowers the Child Potential"
+                  class="rounded-lg"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: top;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div>
+              <p
+                class="text-2xl font-bold mb-2 text-black-light"
+              >
+                YADA IMPACT 3.0: Digital Era Empowers the Child Potential
+              </p>
+              <p
+                class="text-justify"
+              >
+                On Sunday (13/03), Yada Youth Indonesia successfully held its 3rd Yada Impact titled “Digital Era Empowers the Child Potential”.
+              </p>
+            </div>
+          </div>
+          <section
+            class="flex gap-12 flex-wrap justify-center pb-12 sm:pb-20"
+          >
+            <div
+              class="cursor-pointer max-w-[360px]"
+              href="/articles/5"
+            >
+              <div
+                class="relative w-full aspect-[16/9] mb-3"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                >
+                  <img
+                    alt="YADA IMPACT 3.0: Digital Era Empowers the Child Potential"
+                    class="rounded-lg"
+                    data-nimg="fill"
+                    data-testid="card-image"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+              <div
+                class="text-sm"
+              >
+                <p
+                  class="text-xl font-bold mb-2 text-black-light"
+                  data-testid="card-title"
+                >
+                  YADA IMPACT 3.0: Digital Era Empowers the Child Potential
+                </p>
+                <p
+                  class="line-clamp-3"
+                  data-testid="card-preview"
+                >
+                  On Sunday (13/03), Yada Youth Indonesia successfully held its 3rd Yada Impact titled “Digital Era Empowers the Child Potential”.
+                </p>
+              </div>
+            </div>
+            <div
+              class="cursor-pointer max-w-[360px]"
+              href="/articles/4"
+            >
+              <div
+                class="relative w-full aspect-[16/9] mb-3"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                >
+                  <img
+                    alt="Dampak Kemiskinan pada Akses Anak ke Edukasi Seks"
+                    class="rounded-lg"
+                    data-nimg="fill"
+                    data-testid="card-image"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+              <div
+                class="text-sm"
+              >
+                <p
+                  class="text-xl font-bold mb-2 text-black-light"
+                  data-testid="card-title"
+                >
+                  Dampak Kemiskinan pada Akses Anak ke Edukasi Seks
+                </p>
+                <p
+                  class="line-clamp-3"
+                  data-testid="card-preview"
+                >
+                  Kemiskinan menyebabkan sulitnya seseorang mengakses pendidikan, tanpa terkecuali pendidikan seks yang sangat dibutuhkan anak usia dini untuk meningkatkan kesadaran mereka terhadap tubuh mereka sendiri.
+                </p>
+              </div>
+            </div>
+            <div
+              class="cursor-pointer max-w-[360px]"
+              href="/articles/3"
+            >
+              <div
+                class="relative w-full aspect-[16/9] mb-3"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                >
+                  <img
+                    alt="Losing 10 Kgs a Week, Is It Possible? – Unhealthy Eating Habits of Youths"
+                    class="rounded-lg"
+                    data-nimg="fill"
+                    data-testid="card-image"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+              <div
+                class="text-sm"
+              >
+                <p
+                  class="text-xl font-bold mb-2 text-black-light"
+                  data-testid="card-title"
+                >
+                  Losing 10 Kgs a Week, Is It Possible? – Unhealthy Eating Habits of Youths
+                </p>
+                <p
+                  class="line-clamp-3"
+                  data-testid="card-preview"
+                >
+                  The digital era has allowed us to search for almost everything on the Internet. However, how much of this information can you totally rely on, especially when it comes to your health?
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="max-w-screen-xl mx-auto px-8"
+    >
+      <section
+        class="pt-6 pb-4 sm:pb-12 flex flex-col"
+      >
+        <div
+          class="flex justify-between sm:items-center mb-4 flex-col sm:flex-row gap-y-4"
+        >
+          <h2
+            class="font-bold text-3xl text-black-light"
+          >
+            Artikel Baru
+          </h2>
+          <form
+            class="flex gap-2 items-center justify-center flex-wrap"
+            data-testid="search-form"
+          >
+            <div
+              class="flex-auto flex gap-x-1 px-3 sm:px-6 py-2 items-center bg-gray-light placeholder:text-gray is-pill"
+              data-testid="input-wrapper"
+            >
+              <input
+                class="flex-auto outline-none bg-transparent"
+                data-testid="search-input"
+                placeholder="Search"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="text-gray w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div
+              class="relative"
+            >
+              <button
+                class="px-4 py-2 bg-gray-light is-pill"
+                data-testid="btn-toggle-sorting"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="text-gray w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="absolute top-full bg-white overflow-y-hidden transition-all flex flex-col items-center rounded-md z-20 max-h-0"
+              >
+                <button
+                  class="flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100"
+                  data-testid="btn-asc"
+                  hidden=""
+                  type="button"
+                >
+                  A 
+                  <svg
+                    aria-hidden="true"
+                    class="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                   Z
+                </button>
+                <button
+                  class="flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100"
+                  data-testid="btn-desc"
+                  hidden=""
+                  type="button"
+                >
+                  Z 
+                  <svg
+                    aria-hidden="true"
+                    class="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                   A
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div
+        data-testid="main-section"
+      >
+        <div
+          class="mx-auto hidden sm:block pb-12"
+        >
+          <div
+            class="mb-4 relative mx-auto"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271200%27%20height=%27600%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="YADA IMPACT 3.0: Digital Era Empowers the Child Potential"
+                class="rounded-lg"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: top;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div>
+            <p
+              class="text-2xl font-bold mb-2 text-black-light"
+            >
+              YADA IMPACT 3.0: Digital Era Empowers the Child Potential
+            </p>
+            <p
+              class="text-justify"
+            >
+              On Sunday (13/03), Yada Youth Indonesia successfully held its 3rd Yada Impact titled “Digital Era Empowers the Child Potential”.
+            </p>
+          </div>
+        </div>
+        <section
+          class="flex gap-12 flex-wrap justify-center pb-12 sm:pb-20"
+        >
+          <div
+            class="cursor-pointer max-w-[360px]"
+            href="/articles/5"
+          >
+            <div
+              class="relative w-full aspect-[16/9] mb-3"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="YADA IMPACT 3.0: Digital Era Empowers the Child Potential"
+                  class="rounded-lg"
+                  data-nimg="fill"
+                  data-testid="card-image"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="text-sm"
+            >
+              <p
+                class="text-xl font-bold mb-2 text-black-light"
+                data-testid="card-title"
+              >
+                YADA IMPACT 3.0: Digital Era Empowers the Child Potential
+              </p>
+              <p
+                class="line-clamp-3"
+                data-testid="card-preview"
+              >
+                On Sunday (13/03), Yada Youth Indonesia successfully held its 3rd Yada Impact titled “Digital Era Empowers the Child Potential”.
+              </p>
+            </div>
+          </div>
+          <div
+            class="cursor-pointer max-w-[360px]"
+            href="/articles/4"
+          >
+            <div
+              class="relative w-full aspect-[16/9] mb-3"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Dampak Kemiskinan pada Akses Anak ke Edukasi Seks"
+                  class="rounded-lg"
+                  data-nimg="fill"
+                  data-testid="card-image"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="text-sm"
+            >
+              <p
+                class="text-xl font-bold mb-2 text-black-light"
+                data-testid="card-title"
+              >
+                Dampak Kemiskinan pada Akses Anak ke Edukasi Seks
+              </p>
+              <p
+                class="line-clamp-3"
+                data-testid="card-preview"
+              >
+                Kemiskinan menyebabkan sulitnya seseorang mengakses pendidikan, tanpa terkecuali pendidikan seks yang sangat dibutuhkan anak usia dini untuk meningkatkan kesadaran mereka terhadap tubuh mereka sendiri.
+              </p>
+            </div>
+          </div>
+          <div
+            class="cursor-pointer max-w-[360px]"
+            href="/articles/3"
+          >
+            <div
+              class="relative w-full aspect-[16/9] mb-3"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Losing 10 Kgs a Week, Is It Possible? – Unhealthy Eating Habits of Youths"
+                  class="rounded-lg"
+                  data-nimg="fill"
+                  data-testid="card-image"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="text-sm"
+            >
+              <p
+                class="text-xl font-bold mb-2 text-black-light"
+                data-testid="card-title"
+              >
+                Losing 10 Kgs a Week, Is It Possible? – Unhealthy Eating Habits of Youths
+              </p>
+              <p
+                class="line-clamp-3"
+                data-testid="card-preview"
+              >
+                The digital era has allowed us to search for almost everything on the Internet. However, how much of this information can you totally rely on, especially when it comes to your health?
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
