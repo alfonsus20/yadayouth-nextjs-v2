@@ -23,7 +23,7 @@ const Home: NextPage<Props> = ({ data }) => {
         style={{ minHeight: 'calc(100vh - 80px)' }}
         className="relative flex items-center"
       >
-        <div className="max-w-screen-2xl px-8 xs:px-16 min-h-[600px] flex items-center">
+        <div className="max-w-screen-2xl px-8 xs:px-16 min-h-[400px] flex items-center">
           <div className="max-w-xl relative z-10 pt-8 pb-20">
             <h1 className="text-3xl xxs:text-4xl sm:text-5xl font-semibold">
               PEMBERDAYAAN ANAK UNTUK MASA DEPAN
