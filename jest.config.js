@@ -9,6 +9,8 @@ module.exports = {
     "!**/utils/constants.tsx",
     "!**/fileTransformer.js",
     "!**/*.config.js",
+    "!**/pages/_document.tsx",
+    "!**/pages/_app.tsx",
   ],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)

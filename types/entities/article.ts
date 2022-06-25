@@ -3,7 +3,7 @@ import { Paginated } from "../apiResponse";
 export type Article = {
   id: number;
   title: string;
-  author?: string;
+  author: string | null;
   timePublised: string;
   articleImage: string;
   topic: string;
@@ -12,8 +12,8 @@ export type Article = {
 };
 
 export type ArticleDto = {
-  previous?: number;
-  next?: number;
+  previous: number | null;
+  next: number | null;
   result: Article;
 };
 

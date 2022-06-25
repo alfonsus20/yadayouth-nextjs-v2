@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article detail unit test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="max-w-screen-xl mx-auto pt-8 px-8 lg:px-0"
+      >
+        <div
+          class="mb-4"
+        >
+          <h2
+            class="text-gray-600 font-bold text-3xl mb-2"
+          >
+            YADA IMPACT 3.0: Digital Era Empowers the Child Potential
+          </h2>
+          <p
+            class="text-orange-500"
+          >
+            Tuesday, 29 March 2022
+          </p>
+        </div>
+        <div
+          class="flex justify-center mb-4"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27900%27%20height=%27480%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt="gambar"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div>
+          <p
+            dir="ltr"
+            style="line-height:1.7999999999999998;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+          >
+            <span
+              style="font-family: \\"Helvetica Neue\\"; font-size: 12px;"
+            >
+              ﻿
+            </span>
+            <span
+              style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"
+            >
+              On Sunday (13/03), Yada Youth Indonesia successfully held its 3rd Yada Impact titled “Digital Era Empowers the Child Potential”. The event was open to the public via Zoom Cloud Meeting, featuring two incredible speakers, Muflih Dwi Fikri (CEO of Global Millennial Group) and Angel Nathania Devi, S.Psi., M.Psi. (Clinical Child and Adolescent Psychologist at Klinik Jiwa Selaras and RS Sumber Kasih). Each speaker presented the sub themes of Yada Impact 3.0 which is “Be Smart with Digital Literacy” by Muflih and “Explore the Child’s Potential, not Burden the Child” by Devi. 
+            </span>
+          </p>
+          <p>
+            <span
+              id="docs-internal-guid-2653db64-7fff-b028-cee1-93fdbf69b04c"
+            />
+          </p>
+          <p
+            dir="ltr"
+            style="line-height:1.7999999999999998;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+          >
+            <span
+              style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"
+            >
+              <br />
+            </span>
+          </p>
+          <p
+            dir="ltr"
+            style="line-height:1.7999999999999998;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+          >
+            <span
+              style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"
+            >
+              Muflih opened his speech by explaining that the generation has developed rapidly, especially with technology that has become much easier to use. He also shared his experience in Global Millennial Group while emphasizing the importance of having digital literacy in the present era. “Time will always move on, it wont stop and wait for anyone. That’s why we have to always upgrade ourselves to catch up with the era,” say Muflih. Moving on to the next speaker, Devi shared that parental pressure can cause psychological burden to the child. “Parents experience excessive anxiety and are ambitious, controlling and rigid, and forcing their children to learn beyond their limits. It makes learning become a structured and controlled activity by parents that causes children to experience mental problems such as anxiety, frustration, and depression,” Devi explained. “As parents, there are several things we can do, such as supporting their interest, teaching them to set boundaries and take responsibility, and never compare them to other children. Appreciate their effort, not only their achievements,”
+            </span>
+          </p>
+        </div>
+        <div
+          class="flex"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="max-w-screen-xl mx-auto pt-8 px-8 lg:px-0"
+    >
+      <div
+        class="mb-4"
+      >
+        <h2
+          class="text-gray-600 font-bold text-3xl mb-2"
+        >
+          YADA IMPACT 3.0: Digital Era Empowers the Child Potential
+        </h2>
+        <p
+          class="text-orange-500"
+        >
+          Tuesday, 29 March 2022
+        </p>
+      </div>
+      <div
+        class="flex justify-center mb-4"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27900%27%20height=%27480%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="gambar"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div>
+        <p
+          dir="ltr"
+          style="line-height:1.7999999999999998;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+        >
+          <span
+            style="font-family: \\"Helvetica Neue\\"; font-size: 12px;"
+          >
+            ﻿
+          </span>
+          <span
+            style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"
+          >
+            On Sunday (13/03), Yada Youth Indonesia successfully held its 3rd Yada Impact titled “Digital Era Empowers the Child Potential”. The event was open to the public via Zoom Cloud Meeting, featuring two incredible speakers, Muflih Dwi Fikri (CEO of Global Millennial Group) and Angel Nathania Devi, S.Psi., M.Psi. (Clinical Child and Adolescent Psychologist at Klinik Jiwa Selaras and RS Sumber Kasih). Each speaker presented the sub themes of Yada Impact 3.0 which is “Be Smart with Digital Literacy” by Muflih and “Explore the Child’s Potential, not Burden the Child” by Devi. 
+          </span>
+        </p>
+        <p>
+          <span
+            id="docs-internal-guid-2653db64-7fff-b028-cee1-93fdbf69b04c"
+          />
+        </p>
+        <p
+          dir="ltr"
+          style="line-height:1.7999999999999998;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+        >
+          <span
+            style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"
+          >
+            <br />
+          </span>
+        </p>
+        <p
+          dir="ltr"
+          style="line-height:1.7999999999999998;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+        >
+          <span
+            style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"
+          >
+            Muflih opened his speech by explaining that the generation has developed rapidly, especially with technology that has become much easier to use. He also shared his experience in Global Millennial Group while emphasizing the importance of having digital literacy in the present era. “Time will always move on, it wont stop and wait for anyone. That’s why we have to always upgrade ourselves to catch up with the era,” say Muflih. Moving on to the next speaker, Devi shared that parental pressure can cause psychological burden to the child. “Parents experience excessive anxiety and are ambitious, controlling and rigid, and forcing their children to learn beyond their limits. It makes learning become a structured and controlled activity by parents that causes children to experience mental problems such as anxiety, frustration, and depression,” Devi explained. “As parents, there are several things we can do, such as supporting their interest, teaching them to set boundaries and take responsibility, and never compare them to other children. Appreciate their effort, not only their achievements,”
+          </span>
+        </p>
+      </div>
+      <div
+        class="flex"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
