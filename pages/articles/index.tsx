@@ -1,26 +1,26 @@
 import {
   ArrowRightIcon,
   SearchIcon,
-  SortDescendingIcon
-} from "@heroicons/react/outline";
-import cn from "classnames";
-import { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-import { ArticleCard, WideArticleCard } from "../../components/Card";
-import IconButton from "../../components/IconButton";
-import Input from "../../components/Input";
-import { fetchArticles } from "../../models/article";
-import { Article } from "../../types/entities/article";
+  SortDescendingIcon,
+} from '@heroicons/react/outline';
+import cn from 'classnames';
+import { GetStaticProps, NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { ArticleCard, WideArticleCard } from '../../components/Card';
+import IconButton from '../../components/IconButton';
+import Input from '../../components/Input';
+import { fetchArticles } from '../../models/article';
+import { Article } from '../../types/entities/article';
 
 type Props = {
   data: Array<Article>;
 };
 
 const Articles: NextPage<Props> = ({ data }) => {
-  const [keyword, setKeyword] = useState<string>("");
+  const [keyword, setKeyword] = useState<string>('');
   const [isOpenSorting, setIsOpenSorting] = useState<boolean>(false);
   const router = useRouter();
   const { keyword: keywordParams, sortDirection } = router.query;
@@ -33,7 +33,7 @@ const Articles: NextPage<Props> = ({ data }) => {
   let filteredArticles = data.filter((article) =>
     article.title
       .toLowerCase()
-      .includes(((keywordParams as string) || "").toLowerCase())
+      .includes(((keywordParams as string) || '').toLowerCase())
   );
 
   const toggleSorting = () => {
@@ -44,8 +44,8 @@ const Articles: NextPage<Props> = ({ data }) => {
     setIsOpenSorting(false);
   };
 
-  if (sortDirection === "ASC" || sortDirection === "DESC") {
-    if (sortDirection === "ASC") {
+  if (sortDirection === 'ASC' || sortDirection === 'DESC') {
+    if (sortDirection === 'ASC') {
       filteredArticles.sort((a, b) => a.title.localeCompare(b.title));
     } else {
       filteredArticles.sort((a, b) => b.title.localeCompare(a.title));
@@ -57,8 +57,8 @@ const Articles: NextPage<Props> = ({ data }) => {
       setKeyword(keywordParams as string);
     }
     if (sortDirection) {
-      if (sortDirection !== "ASC" && sortDirection !== "DESC") {
-        router.push({ query: { ...router.query, sortDirection: "" } });
+      if (sortDirection !== 'ASC' && sortDirection !== 'DESC') {
+        router.push({ query: { ...router.query, sortDirection: '' } });
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -75,6 +75,7 @@ const Articles: NextPage<Props> = ({ data }) => {
           <form
             className="flex gap-2 items-center justify-center flex-wrap"
             onSubmit={handleSubmit}
+            data-testid="search-form"
           >
             <Input
               onChange={(e) => setKeyword(e.target.value)}
@@ -84,6 +85,7 @@ const Articles: NextPage<Props> = ({ data }) => {
               value={keyword}
               icon={<SearchIcon className="text-gray w-5 h-5" />}
               className="flex-auto"
+              data-testid="search-input"
             />
             <div className="relative">
               <IconButton
@@ -92,25 +94,28 @@ const Articles: NextPage<Props> = ({ data }) => {
                 variant="secondary"
                 shape="pill"
                 onClick={toggleSorting}
+                data-testid="btn-toggle-sorting"
               />
               <div
                 className={cn(
-                  "absolute top-full bg-white overflow-y-hidden transition-all flex flex-col items-center rounded-md z-20",
+                  'absolute top-full bg-white overflow-y-hidden transition-all flex flex-col items-center rounded-md z-20',
                   {
-                    "max-h-[200px]": isOpenSorting,
-                    "max-h-0": !isOpenSorting,
+                    'max-h-[200px]': isOpenSorting,
+                    'max-h-0': !isOpenSorting,
                   }
                 )}
               >
                 <button
+                  hidden={!isOpenSorting}
                   type="button"
                   className={cn(
-                    "flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100",
-                    { "bg-gray-100": sortDirection === "ASC" }
+                    'flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100',
+                    { 'bg-gray-100': sortDirection === 'ASC' }
                   )}
+                  data-testid="btn-asc"
                   onClick={() => {
                     router.push({
-                      query: { ...router.query, sortDirection: "ASC" },
+                      query: { ...router.query, sortDirection: 'ASC' },
                     });
                     closeSorting();
                   }}
@@ -118,14 +123,16 @@ const Articles: NextPage<Props> = ({ data }) => {
                   A <ArrowRightIcon className="w-3 h-3" /> Z
                 </button>
                 <button
+                  hidden={!isOpenSorting}
                   type="button"
+                  data-testid="btn-desc"
                   className={cn(
-                    "flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100",
-                    { "bg-gray-100": sortDirection === "DESC" }
+                    'flex items-center gap-x-2 px-4 py-2 hover:bg-gray-100',
+                    { 'bg-gray-100': sortDirection === 'DESC' }
                   )}
                   onClick={() => {
                     router.push({
-                      query: { ...router.query, sortDirection: "DESC" },
+                      query: { ...router.query, sortDirection: 'DESC' },
                     });
                     closeSorting();
                   }}
@@ -138,7 +145,7 @@ const Articles: NextPage<Props> = ({ data }) => {
         </div>
       </section>
       {keywordParams || sortDirection ? (
-        <section className="space-y-8">
+        <section className="space-y-8" data-testid="list-section">
           {filteredArticles.map((article) => (
             <WideArticleCard
               key={article.id}
@@ -150,7 +157,7 @@ const Articles: NextPage<Props> = ({ data }) => {
           ))}
         </section>
       ) : (
-        <>
+        <div data-testid="main-section">
           <div className="mx-auto hidden sm:block pb-12">
             <div className="mb-4 relative mx-auto">
               <Image
@@ -181,10 +188,10 @@ const Articles: NextPage<Props> = ({ data }) => {
               />
             ))}
           </section>
-        </>
+        </div>
       )}
       {filteredArticles.length === 0 && (
-        <div className="py-20 text-center text-2xl">
+        <div className="py-20 text-center text-2xl" data-testid="not-found-articles">
           Artikel Tidak Ditemukan
         </div>
       )}

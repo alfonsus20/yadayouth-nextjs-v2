@@ -52,6 +52,7 @@ describe('Article detail unit test', () => {
       config: {},
     });
 
+    await getStaticProps({ params: { articleId: '5' } });
     const res = await getStaticProps({ params: { articleId: '12' } });
     expect(res).toEqual({ props: {}, notFound: true });
   });
@@ -64,6 +65,8 @@ describe('Article detail unit test', () => {
       headers: {},
       config: {},
     });
+
+    await getStaticProps({ params: { articleId: '5' } });
 
     render(<ArticleDetail data={articleSingle.result} prev={4} next={null} />);
 
@@ -81,6 +84,8 @@ describe('Article detail unit test', () => {
       headers: {},
       config: {},
     });
+
+    await getStaticProps({ params: { articleId: '5' } });
 
     render(<ArticleDetail data={articleSingle.result} next={6} prev={null} />);
 
