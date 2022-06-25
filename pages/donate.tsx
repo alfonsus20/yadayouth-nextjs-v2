@@ -16,9 +16,9 @@ const Donate = () => {
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex items-center"
       >
-        <div className="max-w-screen-2xl px-8 py-16 xs:px-16">
-          <div className="max-w-3xl relative z-10 pt-8 pb-12">
-            <h1 className="text-[2.2rem] sm:text-5xl font-semibold sm:leading-normal">
+        <div className="max-w-screen-2xl px-8 py-16 xs:px-16 min-h-[600px] flex items-center">
+          <div className="max-w-3xl relative z-10 pt-8 pb-20">
+            <h1 className="text-3xl xxs:text-4xl sm:text-5xl font-semibold leading-normal xxs:leading-normal xs:leading-normal sm:leading-normal">
               Melalui donasi yang baik, Anda dapat memberikan dampak positif
               bagi pemberdayaan anak-anak di Indonesia!
             </h1>

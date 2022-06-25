@@ -1,0 +1,716 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index page unit test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <section
+          class="relative flex items-center"
+          style="min-height: calc(100vh - 80px);"
+        >
+          <div
+            class="max-w-screen-2xl px-8 xs:px-16 min-h-[600px] flex items-center"
+          >
+            <div
+              class="max-w-xl relative z-10 pt-8 pb-20"
+            >
+              <h1
+                class="text-3xl xxs:text-4xl sm:text-5xl font-semibold"
+              >
+                PEMBERDAYAAN ANAK UNTUK MASA DEPAN
+              </h1>
+              <div
+                class="bg-blue h-1 w-full my-4"
+              />
+              <p
+                class="text-md xs:text-lg"
+              >
+                Kami memberikan pelayanan kepada masyarakat dimana semua keuntungan akan diberikan kepada anak-anak Indonesia
+              </p>
+            </div>
+          </div>
+          <img
+            alt="image"
+            layout="fill"
+            objectfit="cover"
+            placeholder="blur"
+            src="home.jpg"
+          />
+        </section>
+        <section
+          class="max-w-[1200px] mx-auto px-8 xs:px-16 py-16"
+        >
+          <h2
+            class="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32"
+          >
+            Dampak Kami
+          </h2>
+          <div
+            class="grid grid-cols-12 gap-6 md:gap-10"
+          >
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--orange"
+              data-testid="card"
+            >
+              <div
+                class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="220"
+                  quality="100"
+                  src="1.svg"
+                  width="220"
+                />
+              </div>
+              <div
+                class="text-white"
+              >
+                <h3
+                  class="font-semibold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  144 anak
+                </h3>
+                <p
+                  class="text-lg"
+                  data-testid="card-description"
+                >
+                  Jumlah anak yang terbantu
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--yellow"
+              data-testid="card"
+            >
+              <div
+                class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="220"
+                  quality="100"
+                  src="2.svg"
+                  width="220"
+                />
+              </div>
+              <div
+                class="text-white"
+              >
+                <h3
+                  class="font-semibold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  2 tempat
+                </h3>
+                <p
+                  class="text-lg"
+                  data-testid="card-description"
+                >
+                  Jumlah panti asuhan
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--blue"
+              data-testid="card"
+            >
+              <div
+                class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="220"
+                  quality="100"
+                  src="3.svg"
+                  width="220"
+                />
+              </div>
+              <div
+                class="text-white"
+              >
+                <h3
+                  class="font-semibold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  21 Program
+                </h3>
+                <p
+                  class="text-lg"
+                  data-testid="card-description"
+                >
+                  Jumlah program yang sudah di jalankan
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--green"
+              data-testid="card"
+            >
+              <div
+                class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="220"
+                  quality="100"
+                  src="4.svg"
+                  width="220"
+                />
+              </div>
+              <div
+                class="text-white"
+              >
+                <h3
+                  class="font-semibold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  4859 hadirin
+                </h3>
+                <p
+                  class="text-lg"
+                  data-testid="card-description"
+                >
+                  Jumlah hadirin berbagai program
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="relative"
+        >
+          <img
+            alt="image"
+            layout="fill"
+            objectfit="cover"
+            objectposition="bottom"
+            placeholder="blur"
+            src="service.jpg"
+          />
+          <div
+            class="px-8 xs:px-16 pt-24 pb-52 max-w-screen-2xl mx-auto relative z-10"
+          >
+            <h2
+              class="font-bold text-3xl xs:text-4xl text-center mb-28 text-white"
+            >
+              Layanan Kami
+            </h2>
+            <div
+              class="flex flex-wrap gap-x-4 gap-y-20 justify-around"
+            >
+              <div
+                class="relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white bg-red"
+                data-testid="card"
+              >
+                <div
+                  class="absolute -top-12 left-10 bg-white rounded-xl"
+                >
+                  <img
+                    alt="image"
+                    data-testid="card-image"
+                    height="85"
+                    src="1.svg"
+                    width="85"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  Donasi
+                </h3>
+                <p
+                  class="text-lg mb-5"
+                  data-testid="card-description"
+                >
+                  Kami terbuka untuk donasi dengan semua keuntungan akan diberikan kepada anak-anak di Indonesia
+                </p>
+                <button
+                  class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-red-light text-white px-6 text-md"
+                  data-testid="card-btn"
+                >
+                  Donasi
+                </button>
+              </div>
+              <div
+                class="relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white bg-yellow"
+                data-testid="card"
+              >
+                <div
+                  class="absolute -top-12 left-10 bg-white rounded-xl"
+                >
+                  <img
+                    alt="image"
+                    data-testid="card-image"
+                    height="85"
+                    src="2.svg"
+                    width="85"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  Pelayanan komunitas
+                </h3>
+                <p
+                  class="text-lg mb-5"
+                  data-testid="card-description"
+                >
+                  Kami melakukan kerja sukarela untuk mendidik, mendistribusikan makanan, dan memberdayakan anak-anak
+                </p>
+                <button
+                  class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-yellow-light text-white px-6 text-md"
+                  data-testid="card-btn"
+                >
+                  Pelayanan komunitas
+                </button>
+              </div>
+              <div
+                class="relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white bg-blue-lotus"
+                data-testid="card"
+              >
+                <div
+                  class="absolute -top-12 left-10 bg-white rounded-xl"
+                >
+                  <img
+                    alt="image"
+                    data-testid="card-image"
+                    height="85"
+                    src="3.svg"
+                    width="85"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl mb-1"
+                  data-testid="card-title"
+                >
+                  Webinar
+                </h3>
+                <p
+                  class="text-lg mb-5"
+                  data-testid="card-description"
+                >
+                  Kami menyediakan webinar pengembangan diri untuk membantu mendanai layanan masyarakat
+                </p>
+                <button
+                  class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-blue opacity-90 text-white px-6 text-md"
+                  data-testid="card-btn"
+                  disabled=""
+                >
+                  Ikut Webinar
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20"
+        >
+          <h2
+            class="font-bold text-3xl xs:text-4xl text-center mb-8"
+          >
+            Recent Post
+          </h2>
+          <div
+            class="react-multi-carousel-list  "
+            dir="ltr"
+          >
+            <ul
+              class="react-multi-carousel-track "
+              style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <section
+        class="relative flex items-center"
+        style="min-height: calc(100vh - 80px);"
+      >
+        <div
+          class="max-w-screen-2xl px-8 xs:px-16 min-h-[600px] flex items-center"
+        >
+          <div
+            class="max-w-xl relative z-10 pt-8 pb-20"
+          >
+            <h1
+              class="text-3xl xxs:text-4xl sm:text-5xl font-semibold"
+            >
+              PEMBERDAYAAN ANAK UNTUK MASA DEPAN
+            </h1>
+            <div
+              class="bg-blue h-1 w-full my-4"
+            />
+            <p
+              class="text-md xs:text-lg"
+            >
+              Kami memberikan pelayanan kepada masyarakat dimana semua keuntungan akan diberikan kepada anak-anak Indonesia
+            </p>
+          </div>
+        </div>
+        <img
+          alt="image"
+          layout="fill"
+          objectfit="cover"
+          placeholder="blur"
+          src="home.jpg"
+        />
+      </section>
+      <section
+        class="max-w-[1200px] mx-auto px-8 xs:px-16 py-16"
+      >
+        <h2
+          class="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32"
+        >
+          Dampak Kami
+        </h2>
+        <div
+          class="grid grid-cols-12 gap-6 md:gap-10"
+        >
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--orange"
+            data-testid="card"
+          >
+            <div
+              class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+            >
+              <img
+                alt="image"
+                data-testid="card-image"
+                height="220"
+                quality="100"
+                src="1.svg"
+                width="220"
+              />
+            </div>
+            <div
+              class="text-white"
+            >
+              <h3
+                class="font-semibold text-xl mb-1"
+                data-testid="card-title"
+              >
+                144 anak
+              </h3>
+              <p
+                class="text-lg"
+                data-testid="card-description"
+              >
+                Jumlah anak yang terbantu
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--yellow"
+            data-testid="card"
+          >
+            <div
+              class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+            >
+              <img
+                alt="image"
+                data-testid="card-image"
+                height="220"
+                quality="100"
+                src="2.svg"
+                width="220"
+              />
+            </div>
+            <div
+              class="text-white"
+            >
+              <h3
+                class="font-semibold text-xl mb-1"
+                data-testid="card-title"
+              >
+                2 tempat
+              </h3>
+              <p
+                class="text-lg"
+                data-testid="card-description"
+              >
+                Jumlah panti asuhan
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--blue"
+            data-testid="card"
+          >
+            <div
+              class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+            >
+              <img
+                alt="image"
+                data-testid="card-image"
+                height="220"
+                quality="100"
+                src="3.svg"
+                width="220"
+              />
+            </div>
+            <div
+              class="text-white"
+            >
+              <h3
+                class="font-semibold text-xl mb-1"
+                data-testid="card-title"
+              >
+                21 Program
+              </h3>
+              <p
+                class="text-lg"
+                data-testid="card-description"
+              >
+                Jumlah program yang sudah di jalankan
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-3 md:min-h-[350px] flex flex-col p-8 md:pt-32 rounded-3xl relative shadow-lg bg-neon--green"
+            data-testid="card"
+          >
+            <div
+              class="md:absolute md:-top-24 md:-right-4 mx-auto md:mx-0 md:w-56 md:h-56"
+            >
+              <img
+                alt="image"
+                data-testid="card-image"
+                height="220"
+                quality="100"
+                src="4.svg"
+                width="220"
+              />
+            </div>
+            <div
+              class="text-white"
+            >
+              <h3
+                class="font-semibold text-xl mb-1"
+                data-testid="card-title"
+              >
+                4859 hadirin
+              </h3>
+              <p
+                class="text-lg"
+                data-testid="card-description"
+              >
+                Jumlah hadirin berbagai program
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative"
+      >
+        <img
+          alt="image"
+          layout="fill"
+          objectfit="cover"
+          objectposition="bottom"
+          placeholder="blur"
+          src="service.jpg"
+        />
+        <div
+          class="px-8 xs:px-16 pt-24 pb-52 max-w-screen-2xl mx-auto relative z-10"
+        >
+          <h2
+            class="font-bold text-3xl xs:text-4xl text-center mb-28 text-white"
+          >
+            Layanan Kami
+          </h2>
+          <div
+            class="flex flex-wrap gap-x-4 gap-y-20 justify-around"
+          >
+            <div
+              class="relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white bg-red"
+              data-testid="card"
+            >
+              <div
+                class="absolute -top-12 left-10 bg-white rounded-xl"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="85"
+                  src="1.svg"
+                  width="85"
+                />
+              </div>
+              <h3
+                class="font-bold text-xl mb-1"
+                data-testid="card-title"
+              >
+                Donasi
+              </h3>
+              <p
+                class="text-lg mb-5"
+                data-testid="card-description"
+              >
+                Kami terbuka untuk donasi dengan semua keuntungan akan diberikan kepada anak-anak di Indonesia
+              </p>
+              <button
+                class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-red-light text-white px-6 text-md"
+                data-testid="card-btn"
+              >
+                Donasi
+              </button>
+            </div>
+            <div
+              class="relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white bg-yellow"
+              data-testid="card"
+            >
+              <div
+                class="absolute -top-12 left-10 bg-white rounded-xl"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="85"
+                  src="2.svg"
+                  width="85"
+                />
+              </div>
+              <h3
+                class="font-bold text-xl mb-1"
+                data-testid="card-title"
+              >
+                Pelayanan komunitas
+              </h3>
+              <p
+                class="text-lg mb-5"
+                data-testid="card-description"
+              >
+                Kami melakukan kerja sukarela untuk mendidik, mendistribusikan makanan, dan memberdayakan anak-anak
+              </p>
+              <button
+                class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-yellow-light text-white px-6 text-md"
+                data-testid="card-btn"
+              >
+                Pelayanan komunitas
+              </button>
+            </div>
+            <div
+              class="relative px-6 pt-20 md:pt-16 pb-8 flex-[0_1_400px] rounded-3xl text-white bg-blue-lotus"
+              data-testid="card"
+            >
+              <div
+                class="absolute -top-12 left-10 bg-white rounded-xl"
+              >
+                <img
+                  alt="image"
+                  data-testid="card-image"
+                  height="85"
+                  src="3.svg"
+                  width="85"
+                />
+              </div>
+              <h3
+                class="font-bold text-xl mb-1"
+                data-testid="card-title"
+              >
+                Webinar
+              </h3>
+              <p
+                class="text-lg mb-5"
+                data-testid="card-description"
+              >
+                Kami menyediakan webinar pengembangan diri untuk membantu mendanai layanan masyarakat
+              </p>
+              <button
+                class="hover:opacity-90 transition-opacity disabled:opacity-75 disabled:cursor-not-allowed py-2 flex items-center rounded-full bg-blue opacity-90 text-white px-6 text-md"
+                data-testid="card-btn"
+                disabled=""
+              >
+                Ikut Webinar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20"
+      >
+        <h2
+          class="font-bold text-3xl xs:text-4xl text-center mb-8"
+        >
+          Recent Post
+        </h2>
+        <div
+          class="react-multi-carousel-list  "
+          dir="ltr"
+        >
+          <ul
+            class="react-multi-carousel-track "
+            style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
+          />
+        </div>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

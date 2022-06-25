@@ -27,9 +27,9 @@ const About: NextPage<Props> = ({ data }) => {
         style={{ minHeight: "calc(100vh - 80px)" }}
         className="relative flex justify-center items-center"
       >
-        <div className="max-w-screen-lg px-16 text-center text-white">
-          <div className="relative z-10 pt-8 pb-12">
-            <h1 className="text-3xl xs text-3xl:xs:text-4xl sm:text-5xl font-bold">TENTANG KAMI</h1>
+        <div className="max-w-screen-lg px-16 text-center text-white min-h-[600px] flex items-center">
+          <div className="relative z-10 pt-8 pb-20">
+            <h1 className="text-3xl xxs:text-4xl sm:text-5xl font-bold">TENTANG KAMI</h1>
             <div className="bg-blue h-2 w-1/3 my-4 mx-auto rounded-md"></div>
             <p className="text-lg mb-4">
               Yada Youth adalah organisasi nirlaba yang bertujuan untuk fokus
