@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Yada Youth Official Website (Newest Version)
 
-First, run the development server:
+This is the official frontend repository for yadayouth's official website.
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/yadayouthid/yadayouth-nextjs-v2
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd yadayouth-nextjs-v2
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Install dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  yarn install
+```
 
-## Learn More
+Start the server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  yarn dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Running Tests
 
-## Deploy on Vercel
+To run tests, run the following command
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  yarn test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To see the testing coverage, run the following command
+
+```bash
+  yarn test:coverage
+```
+
+## Project Structure
+| Folder Name | Description                            |
+|-------------|----------------------------------------|
+| .github     | CI/CD configuration                    |
+| mocks       | mock files for unit test               |
+| api         | axios instance                         |
+| components  | reusable components                    |
+| hooks       | custom hooks                           |
+| models      | functions for API calls                |
+| pages       | files and folders for routing          |
+| public      | static assets such as fonts and images |
+| styles      | scss files                             |
+| types       | types for entities and API response    |
+| utils       | helper and constants                   |
+
+## Contribution Workflow
+![YadaYouth Contributing drawio (1)](https://user-images.githubusercontent.com/95601279/175853203-f4e76382-c5fa-4a2f-9384-b1c30408bfcb.png)
+
+
+## Tech Stack
+
+**Client:** React, Next, Typescript, TailwindCSS
+
+**Server:** Python, Django
+
