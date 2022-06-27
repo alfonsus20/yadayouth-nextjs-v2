@@ -1,5 +1,5 @@
-import { render, screen } from "@testing-library/react";
 import WideArticle from ".";
+import { render, screen } from "@testing-library/react";
 
 const mockedProps = {
   imageURL: "http://google.com",

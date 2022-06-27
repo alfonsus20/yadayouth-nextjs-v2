@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
-import { AboutCard } from "..";
 import MockedImage from "../../../public/bg/home.jpg";
+import { AboutCard } from "..";
+import { render, screen } from "@testing-library/react";
 
 const mockedProps = {
   image: MockedImage,
@@ -24,7 +24,9 @@ describe("About card unit test", () => {
     expect(screen.getByTestId("card-description")).toBeVisible();
 
     expect(screen.getByTestId("card-title")).toHaveTextContent("Title");
-    expect(screen.getByTestId("card-description")).toHaveTextContent("Description");
+    expect(screen.getByTestId("card-description")).toHaveTextContent(
+      "Description"
+    );
   });
 
   it("should match snapshot", () => {

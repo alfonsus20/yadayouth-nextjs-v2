@@ -1,17 +1,17 @@
-import { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Button from "../components/Button";
-import { AboutCard } from "../components/Card";
-import { EventCarousel } from "../components/Carousel";
-import { fetchPastEvents } from "../models/event";
-import AboutBg from "../public/bg/about.jpg";
-import HanifImg from "../public/founder/hanif.png";
-import StephaniImg from "../public/founder/stephani.png";
-import Logo from "../public/logo.png";
-import { Event } from "../types/entities/event";
-import { VISION_MISSION } from "../utils/constants";
+import AboutBg from '../public/bg/about.jpg';
+import Button from '../components/Button';
+import HanifImg from '../public/founder/hanif.png';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '../public/logo.png';
+import StephaniImg from '../public/founder/stephani.png';
+import { AboutCard } from '../components/Card';
+import { Event } from '../types/entities/event';
+import { EventCarousel } from '../components/Carousel';
+import { fetchPastEvents } from '../models/event';
+import { GetStaticProps, NextPage } from 'next';
+import { VISION_MISSION } from '../utils/constants';
 
 type Props = {
   data: Event[];
@@ -29,7 +29,9 @@ const About: NextPage<Props> = ({ data }) => {
       >
         <div className="max-w-screen-lg px-16 text-center text-white min-h-[400px] flex items-center">
           <div className="relative z-10 pt-8 pb-20">
-            <h1 className="text-3xl xxs:text-4xl sm:text-5xl font-bold">TENTANG KAMI</h1>
+            <h1 className="text-3xl xxs:text-4xl sm:text-5xl font-bold">
+              TENTANG KAMI
+            </h1>
             <div className="bg-blue h-2 w-1/3 my-4 mx-auto rounded-md"></div>
             <p className="text-lg mb-4">
               Yada Youth adalah organisasi nirlaba yang bertujuan untuk fokus
@@ -54,14 +56,17 @@ const About: NextPage<Props> = ({ data }) => {
         />
         <div className="absolute top-0 left-0 bottom-0 right-0 bg-neutral-900 opacity-50"></div>
       </section>
-      <section className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10" id="selengkapnya">
+      <section
+        className="max-w-screen-xl mx-auto px-8 sm:px-16 py-16 grid sm:grid-cols-2 gap-10"
+        id="selengkapnya"
+      >
         {VISION_MISSION.map((item, idx) => (
           <AboutCard key={idx} {...item} />
         ))}
       </section>
       <section className="bg-gradient-to-b from-[#E5AB1A] rounded-t-[80px]">
         <div className="max-w-screen-lg mx-auto px-8 xs:px-16 py-16">
-          <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28">
+          <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28 px-8">
             Behind Yada Youth
           </h3>
           <div className="relative">
@@ -111,7 +116,9 @@ const About: NextPage<Props> = ({ data }) => {
                 />
               </div>
               <div>
-                <h2 className="font-bold text-3xl xs:text-4xl mb-4">YadaYouth.id</h2>
+                <h2 className="font-bold text-3xl xs:text-4xl mb-4">
+                  YadaYouth.id
+                </h2>
                 <p className="text-justify">
                   19 Februari 2021 YadaYouth.id di bangun oleh dua anak muda
                   yaitu Hanif dan Stephani.
@@ -154,7 +161,7 @@ const About: NextPage<Props> = ({ data }) => {
       </section>
       <section className="bg-gradient-to-b from-[#686DEC] rounded-t-[80px]">
         <div className="py-16">
-          <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-12">
+          <h3 className="text-white text-3xl xs:text-4xl font-bold text-center mb-12 px-8">
             Program yang Pernah Dilakukan
           </h3>
           <div className="overflow-x-hidden sm:py-16">

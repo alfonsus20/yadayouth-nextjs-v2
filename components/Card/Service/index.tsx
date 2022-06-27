@@ -1,7 +1,7 @@
+import Button from "../../Button";
 import cn from "classnames";
 import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
-import Button from "../../Button";
 
 type Props = {
   image: StaticImageData;

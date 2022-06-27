@@ -120,7 +120,7 @@ Object {
             class="max-w-screen-lg mx-auto px-8 xs:px-16 py-16"
           >
             <h3
-              class="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28"
+              class="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28 px-8"
             >
               Behind Yada Youth
             </h3>
@@ -230,7 +230,7 @@ Object {
             class="py-16"
           >
             <h3
-              class="text-white text-3xl xs:text-4xl font-bold text-center mb-12"
+              class="text-white text-3xl xs:text-4xl font-bold text-center mb-12 px-8"
             >
               Program yang Pernah Dilakukan
             </h3>
@@ -372,7 +372,7 @@ Object {
           class="max-w-screen-lg mx-auto px-8 xs:px-16 py-16"
         >
           <h3
-            class="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28"
+            class="text-white text-3xl xs:text-4xl font-bold text-center mb-16 xs:mb-28 px-8"
           >
             Behind Yada Youth
           </h3>
@@ -482,7 +482,7 @@ Object {
           class="py-16"
         >
           <h3
-            class="text-white text-3xl xs:text-4xl font-bold text-center mb-12"
+            class="text-white text-3xl xs:text-4xl font-bold text-center mb-12 px-8"
           >
             Program yang Pernah Dilakukan
           </h3>

@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
 import CustomDot from ".";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 const mockedProps = {
   active: false,

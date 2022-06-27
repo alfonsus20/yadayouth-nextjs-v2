@@ -43,7 +43,7 @@ Object {
           class="max-w-[1200px] mx-auto px-8 xs:px-16 py-16"
         >
           <h2
-            class="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32"
+            class="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32 px-8"
           >
             Dampak Kami
           </h2>
@@ -199,7 +199,7 @@ Object {
             class="px-8 xs:px-16 pt-24 pb-52 max-w-screen-2xl mx-auto relative z-10"
           >
             <h2
-              class="font-bold text-3xl xs:text-4xl text-center mb-28 text-white"
+              class="font-bold text-3xl xs:text-4xl text-center mb-28 text-white px-8"
             >
               Layanan Kami
             </h2>
@@ -316,7 +316,7 @@ Object {
           class="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20"
         >
           <h2
-            class="font-bold text-3xl xs:text-4xl text-center mb-8"
+            class="font-bold text-3xl xs:text-4xl text-center mb-8 px-8"
           >
             Recent Post
           </h2>
@@ -372,7 +372,7 @@ Object {
         class="max-w-[1200px] mx-auto px-8 xs:px-16 py-16"
       >
         <h2
-          class="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32"
+          class="font-bold text-3xl xs:text-4xl text-center mb-10 md:mb-32 px-8"
         >
           Dampak Kami
         </h2>
@@ -528,7 +528,7 @@ Object {
           class="px-8 xs:px-16 pt-24 pb-52 max-w-screen-2xl mx-auto relative z-10"
         >
           <h2
-            class="font-bold text-3xl xs:text-4xl text-center mb-28 text-white"
+            class="font-bold text-3xl xs:text-4xl text-center mb-28 text-white px-8"
           >
             Layanan Kami
           </h2>
@@ -645,7 +645,7 @@ Object {
         class="max-w-screen-2xl mx-auto px-8 xs:px-16 py-16 rounded-t-[4.5rem] bg-white relative bottom-20"
       >
         <h2
-          class="font-bold text-3xl xs:text-4xl text-center mb-8"
+          class="font-bold text-3xl xs:text-4xl text-center mb-8 px-8"
         >
           Recent Post
         </h2>
