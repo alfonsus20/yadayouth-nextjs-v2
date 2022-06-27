@@ -1,6 +1,6 @@
-import { render } from "@testing-library/react";
 import EventCard from ".";
 import { Event } from "../../../types/entities/event";
+import { render } from "@testing-library/react";
 
 const mockedProps: Event[] = [
   {

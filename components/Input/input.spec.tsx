@@ -1,6 +1,6 @@
-import { UserIcon } from "@heroicons/react/outline";
-import { fireEvent, render, screen } from "@testing-library/react";
 import Input from ".";
+import { fireEvent, render, screen } from "@testing-library/react";
+import { UserIcon } from "@heroicons/react/outline";
 
 const mockedProps = {
   onChange: jest.fn(),

@@ -1,20 +1,23 @@
+import Button from '../../components/Button';
+import classNames from 'classnames';
+import dayjs from 'dayjs';
+import Head from 'next/head';
+import Image from 'next/image';
+import { Article } from '../../types/entities/article';
+import { fetchArticles, fetchArticlesById } from '../../models/article';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { useRouter } from 'next/router';
+import 'dayjs/locale/id';
 import {
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
-} from '@heroicons/react/outline';
-import classNames from 'classnames';
-import dayjs from 'dayjs';
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import Button from '../../components/Button';
-import { fetchArticles, fetchArticlesById } from '../../models/article';
-import { Article } from '../../types/entities/article';
+} from "@heroicons/react/outline";
+
+dayjs.locale("id");
 
 type Props = {
   data: Article;
-  prev: number| null;
+  prev: number | null;
   next: number | null;
 };
 
@@ -29,7 +32,7 @@ const ArticleDetail: NextPage<Props> = ({ data, prev, next }) => {
       <div className="mb-4">
         <h2 className="text-gray-600 font-bold text-3xl mb-2">{data.title}</h2>
         <p className="text-orange-500">
-          {dayjs(data.timePublised).format('dddd, DD MMMM YYYY')}
+          {dayjs(data.timePublised).format("dddd, DD MMMM YYYY")}
         </p>
       </div>
       <div className="flex justify-center mb-4">
@@ -43,7 +46,7 @@ const ArticleDetail: NextPage<Props> = ({ data, prev, next }) => {
         />
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.content }} />
-      <div className={classNames('flex', { 'mt-8': prev || next })}>
+      <div className={classNames("flex", { "mt-8": prev || next })}>
         {prev && (
           <Button
             leftIcon={<ChevronDoubleLeftIcon className="w-5 h-5 text-white" />}
@@ -96,7 +99,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = data.results.map((article) => ({
     params: { articleId: article.id.toString() },
   }));
-  return { paths, fallback: 'blocking' };
+  return { paths, fallback: "blocking" };
 };
 
 export default ArticleDetail;

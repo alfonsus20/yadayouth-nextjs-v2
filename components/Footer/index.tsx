@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import Logo from "../../public/logo.png";
 import InstagramLogo from "../../public/sosmed/instagram.svg";
+import Link from "next/link";
 import LinkedinLogo from "../../public/sosmed/linkedin.svg";
+import Logo from "../../public/logo.png";
 import TiktokLogo from "../../public/sosmed/tiktok.svg";
 
 const Footer = () => {

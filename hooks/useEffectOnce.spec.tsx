@@ -1,6 +1,6 @@
+import useEffectOnce from "./useEffectOnce";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { useState } from "react";
-import useEffectOnce from "./useEffectOnce";
 
 const mockedCallback = jest.fn();
 

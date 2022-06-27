@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Carousel from "react-multi-carousel";
-import { IGPost } from "../../../types/entities/igPost";
 import CustomDot from "../CustomDot";
+import Image from "next/image";
+import { IGPost } from "../../../types/entities/igPost";
 
 type Props = {
   data: IGPost[];

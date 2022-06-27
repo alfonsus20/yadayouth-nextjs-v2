@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
-import { ImpactCard } from "..";
 import MockedImage from "../../../public/bg/home.jpg";
+import { ImpactCard } from "..";
+import { render, screen } from "@testing-library/react";
 
 const mockedProps = {
   image: MockedImage,

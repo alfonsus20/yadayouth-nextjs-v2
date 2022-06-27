@@ -1,5 +1,5 @@
-import { render } from "@testing-library/react";
 import Footer from ".";
+import { render } from "@testing-library/react";
 
 jest.mock("next/image", () => ({
   __esModule: true,

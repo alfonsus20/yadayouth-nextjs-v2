@@ -1,6 +1,6 @@
-import { UserIcon } from "@heroicons/react/outline";
-import { render, screen } from "@testing-library/react";
 import Button from ".";
+import { render, screen } from "@testing-library/react";
+import { UserIcon } from "@heroicons/react/outline";
 
 describe("Button unit test", () => {
   it("should match snapshot", () => {

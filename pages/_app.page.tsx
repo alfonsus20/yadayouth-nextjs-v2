@@ -1,11 +1,11 @@
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import NavbarMobile from '../components/Navbar/navbar.mobile';
+import NextNProgress from 'nextjs-progressbar';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import '../styles/globals.scss';
 import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
-import NextNProgress from "nextjs-progressbar";
-import { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import NavbarMobile from "../components/Navbar/navbar.mobile";
-import "../styles/globals.scss";
 
 const setSmoothScroll = (isSmooth: boolean) => {
   document.documentElement.style.scrollBehavior = isSmooth ? "smooth" : "auto";
