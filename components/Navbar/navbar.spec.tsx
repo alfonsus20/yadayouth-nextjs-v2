@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
-import Navbar from '.';
+import Navbar from ".";
+import { render } from "@testing-library/react";
 
 const mockedProps = {
   onHamburgerButtonClick: jest.fn(),

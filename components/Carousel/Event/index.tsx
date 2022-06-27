@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Carousel from "react-multi-carousel";
-import { Event } from "../../../types/entities/event";
 import CustomDot from "../CustomDot";
+import Image from "next/image";
+import { Event } from "../../../types/entities/event";
 
 type Props = {
   data: Event[];

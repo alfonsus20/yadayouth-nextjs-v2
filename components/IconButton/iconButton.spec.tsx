@@ -1,6 +1,6 @@
-import { UserIcon } from "@heroicons/react/outline";
-import { render } from "@testing-library/react";
 import IconButton from ".";
+import { render } from "@testing-library/react";
+import { UserIcon } from "@heroicons/react/outline";
 
 const mockedProps = {
   icon: <UserIcon className="w-5 h-5 bg-green-500" />,

@@ -1,9 +1,9 @@
-import { render } from '@testing-library/react';
 import * as svc from '../models/event';
-import pastEvents from '../__mocks__/pastEvents.json';
 import About, { getStaticProps } from './about.page';
+import pastEvents from '../__mocks__/pastEvents.json';
+import { render } from '@testing-library/react';
 
-jest.mock('next/image', () => ({
+jest.mock("next/image", () => ({
   __esModule: true,
   default: (props: any) => {
     // eslint-disable-next-line @next/next/no-img-element
@@ -11,12 +11,12 @@ jest.mock('next/image', () => ({
   },
 }));
 
-describe('About page unit test', () => {
-  it('should match snapshot', async () => {
-    jest.spyOn(svc, 'fetchPastEvents').mockResolvedValue({
+describe("About page unit test", () => {
+  it("should match snapshot", async () => {
+    jest.spyOn(svc, "fetchPastEvents").mockResolvedValue({
       data: pastEvents,
       status: 200,
-      statusText: 'Ok',
+      statusText: "Ok",
       headers: {},
       config: {},
     });

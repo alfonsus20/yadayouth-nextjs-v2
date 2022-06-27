@@ -1,8 +1,8 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import mockRouter from "next-router-mock";
-import singletonRouter from 'next/router';
-import { ServiceCard } from "..";
 import MockedImage from "../../../public/bg/home.jpg";
+import mockRouter from "next-router-mock";
+import singletonRouter from "next/router";
+import { fireEvent, render, screen } from "@testing-library/react";
+import { ServiceCard } from "..";
 
 const mockedProps = {
   image: MockedImage,

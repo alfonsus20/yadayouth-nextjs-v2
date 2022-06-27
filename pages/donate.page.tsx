@@ -33,8 +33,8 @@ const Donate = () => {
         />
       </section>
       <section className="max-w-screen-xl mx-auto px-8 py-16 xs:px-16">
-        <h2 className="font-bold text-center text-3xl xs:text-4xl mb-12">
-          Seluruh dana akan digunakan untuk{" "}
+        <h2 className="font-bold text-center text-3xl xs:text-4xl mb-12 px-8">
+          Seluruh dana akan digunakan untuk
         </h2>
         <div className="grid sm:grid-cols-2 gap-8">
           {DONATION_AIMS.map((item, idx) => (
@@ -43,7 +43,7 @@ const Donate = () => {
         </div>
       </section>
       <section className="max-w-screen-xl mx-auto px-8 py-16 xs:px-16">
-        <h2 className="font-bold text-center text-3xl xs:text-4xl mb-12">
+        <h2 className="font-bold text-center text-3xl xs:text-4xl mb-12 px-8">
           Bagaimana Cara Donasi ?
         </h2>
         <div className="flex flex-col sm:flex-row items-center gap-12 text-lg">

@@ -1,9 +1,9 @@
 import cn from "classnames";
+import HamburgerMenu from "react-hamburger-menu";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import HamburgerMenu from "react-hamburger-menu";
 import { LINK_PATHS } from "../../utils/constants";
+import { useRouter } from "next/router";
 
 type Props = {
   onHamburgerButtonClick: () => void;

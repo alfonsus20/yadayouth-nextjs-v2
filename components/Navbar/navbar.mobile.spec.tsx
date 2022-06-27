@@ -1,6 +1,5 @@
-import { render } from '@testing-library/react';
-import Navbar from '.';
-import NavbarMobile from './navbar.mobile';
+import NavbarMobile from "./navbar.mobile";
+import { render } from "@testing-library/react";
 
 const mockedProps = {
   onClose: jest.fn(),

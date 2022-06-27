@@ -1,9 +1,9 @@
-import { render } from '@testing-library/react';
-import Home, { getStaticProps } from './index.page';
 import * as svc from '../models/igPost';
+import Home, { getStaticProps } from './index.page';
 import igPosts from '../__mocks__/igPosts.json';
+import { render } from '@testing-library/react';
 
-jest.mock('next/image', () => ({
+jest.mock("next/image", () => ({
   __esModule: true,
   default: (props: any) => {
     // eslint-disable-next-line @next/next/no-img-element
@@ -11,12 +11,12 @@ jest.mock('next/image', () => ({
   },
 }));
 
-describe('Index page unit test', () => {
-  it('should match snapshot', async () => {
-    jest.spyOn(svc, 'fetchIGPosts').mockResolvedValue({
+describe("Index page unit test", () => {
+  it("should match snapshot", async () => {
+    jest.spyOn(svc, "fetchIGPosts").mockResolvedValue({
       data: igPosts,
       status: 200,
-      statusText: 'Ok',
+      statusText: "Ok",
       headers: {},
       config: {},
     });
