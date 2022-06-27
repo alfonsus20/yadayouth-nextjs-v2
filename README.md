@@ -29,21 +29,6 @@ Start the server
   yarn dev
 ```
 
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  yarn test
-```
-
-To see the testing coverage, run the following command
-
-```bash
-  yarn test:coverage
-```
-
 ## Project Structure
 | Folder Name | Description                            |
 |-------------|----------------------------------------|
@@ -58,6 +43,20 @@ To see the testing coverage, run the following command
 | styles      | scss files                             |
 | types       | types for entities and API response    |
 | utils       | helper and constants                   |
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  yarn test
+```
+
+To see the testing coverage, run the following command
+
+```bash
+  yarn test:coverage
+```
 
 ## Contribution Workflow
 ![YadaYouth Contributing drawio (1)](https://user-images.githubusercontent.com/95601279/175853203-f4e76382-c5fa-4a2f-9384-b1c30408bfcb.png)
