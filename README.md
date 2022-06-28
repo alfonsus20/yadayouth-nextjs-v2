@@ -8,7 +8,7 @@ This is the official frontend repository for yadayouth's official website.
 Clone the project
 
 ```bash
-  git clone https://github.com/yadayouthid/yadayouth-nextjs-v2
+  git clone https://github.com/alfonsus20/yadayouth-nextjs-v2
 ```
 
 Go to the project directory
